@@ -25,7 +25,7 @@
   },
   {
     "front": "Array generic methods",
-    "back": "to apply array methods to strings or other array-like objects (such as function arguments). By doing this, you treat a string as an array of characters (or otherwise treat a non-array as an array). function isLetter(character) {  return (character >= \"a\" && character <= \"z\"); } if (Array.prototype.every.call(str, isLetter)) alert(\"The string '\" + str + \"' contains only letters!\");"
+    "back": "to apply array methods to strings or other array-like objects (such as function arguments). By doing this, you treat a string as an array of characters (or otherwise treat a non-array as an array). function isLetter(character) {  return (character &gt= \"a\" && character &lt= \"z\"); } if (Array.prototype.every.call(str, isLetter)) alert(\"The string '\" + str + \"' contains only letters!\");"
   },
   {
     "front": "using splice",
@@ -49,7 +49,7 @@
   },
   {
     "front": "Using call to chain constructors for an object",
-    "back": "You can use call to chain constructors for an object, similar to Java. In the following example, the constructor for the Product object is defined with two parameters, name and price. Two other functions Food and Toy invoke Product passing this and name and price. Product initializes the properties name and price, both specialized functions define the category.  function Product(name, price) { this.name = name; this.price = price; if (price < 0)  throw RangeError('Cannot create product \"' + name + '\" with a negative price');  return this; } function Food(name, price) {  Product.call(this, name, price);  this.category = 'food'; } Food.prototype = new Product(); function Toy(name, price) {  Product.call(this, name, price);  this.category = 'toy'; } Toy.prototype = new Product(); var cheese = new Food('feta', 5); var fun = new Toy('robot', 40);"
+    "back": "You can use call to chain constructors for an object, similar to Java. In the following example, the constructor for the Product object is defined with two parameters, name and price. Two other functions Food and Toy invoke Product passing this and name and price. Product initializes the properties name and price, both specialized functions define the category.  function Product(name, price) { this.name = name; this.price = price; if (price &lt 0)  throw RangeError('Cannot create product \"' + name + '\" with a negative price');  return this; } function Food(name, price) {  Product.call(this, name, price);  this.category = 'food'; } Food.prototype = new Product(); function Toy(name, price) {  Product.call(this, name, price);  this.category = 'toy'; } Toy.prototype = new Product(); var cheese = new Food('feta', 5); var fun = new Toy('robot', 40);"
   },
   {
     "front": "Function.prototype.apply",

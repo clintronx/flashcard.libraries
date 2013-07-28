@@ -57,7 +57,7 @@
     },
     {
         "front": "positioning example",
-        "back": "<div style=\"position: relative; width: 30em; height: 10em;\">  <div style=\"position: absolute; left: 0; width: 30%; top: 0;\">A</div>  <div style=\"position: absolute; left: 35%; width:30%; top: 0; height: 30%;\">B</div> </div>"
+        "back": "&ltdiv style=\"position: relative; width: 30em; height: 10em;\"&gt  &ltdiv style=\"position: absolute; left: 0; width: 30%; top: 0;\"&gtA&lt/div&gt  &ltdiv style=\"position: absolute; left: 35%; width:30%; top: 0; height: 30%;\"&gtB&lt/div&gt &lt/div&gt"
     },
     {
         "front": "z-index",

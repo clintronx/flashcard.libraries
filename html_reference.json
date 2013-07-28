@@ -1,39 +1,39 @@
 [
   {
     "front": "simple table",
-    "back": "<p>Simple table</p> <table>  <tr>   <td>John</td>   <td>Doe</td>  </tr>  <tr>   <td>Jane</td>   <td>Doe</td>  </tr> </table>"
+    "back": "&ltp&gtSimple table&lt/p&gt &lttable&gt  &lttr&gt   &lttd&gtJohn&lt/td&gt   &lttd&gtDoe&lt/td&gt  &lt/tr&gt  &lttr&gt   &lttd&gtJane&lt/td&gt   &lttd&gtDoe&lt/td&gt  &lt/tr&gt &lt/table&gt"
   },
   {
     "front": "Simple table with header",
-    "back": "<p>Simple table with header</p> <table>  <tr>   <th>First name</th>   <th>Last name</th>  </tr>  <tr>   <td>John</td>   <td>Doe</td>  </tr>  <tr>   <td>Jane</td>   <td>Doe</td>  </tr> </table>"
+    "back": "&ltp&gtSimple table with header&lt/p&gt &lttable&gt  &lttr&gt   &ltth&gtFirst name&lt/th&gt   &ltth&gtLast name&lt/th&gt  &lt/tr&gt  &lttr&gt   &lttd&gtJohn&lt/td&gt   &lttd&gtDoe&lt/td&gt  &lt/tr&gt  &lttr&gt   &lttd&gtJane&lt/td&gt   &lttd&gtDoe&lt/td&gt  &lt/tr&gt &lt/table&gt"
   },
   {
     "front": "Table with thead, tfoot, and tbody",
-    "back": "<p>Table with thead, tfoot, and tbody</p> <table>  <thead>   <tr>    <th>Header content 1</th>    <th>Header content 2</th>   </tr>  </thead>  <tfoot>   <tr>    <td>Footer content 1</td>    <td>Footer content 2</td>   </tr>  </tfoot>  <tbody>   <tr>    <td>Body content 1</td>    <td>Body content 2</td>   </tr>  </tbody> </table>"
+    "back": "&ltp&gtTable with thead, tfoot, and tbody&lt/p&gt &lttable&gt  &ltthead&gt   &lttr&gt    &ltth&gtHeader content 1&lt/th&gt    &ltth&gtHeader content 2&lt/th&gt   &lt/tr&gt  &lt/thead&gt  &lttfoot&gt   &lttr&gt    &lttd&gtFooter content 1&lt/td&gt    &lttd&gtFooter content 2&lt/td&gt   &lt/tr&gt  &lt/tfoot&gt  &lttbody&gt   &lttr&gt    &lttd&gtBody content 1&lt/td&gt    &lttd&gtBody content 2&lt/td&gt   &lt/tr&gt  &lt/tbody&gt &lt/table&gt"
   },
   {
     "front": "A basic input box",
-    "back": "<!-- A basic input --> <input type=\"text\" name=\"input\" value=\"Type here\">"
+    "back": "&lt!-- A basic input --&gt &ltinput type=\"text\" name=\"input\" value=\"Type here\"&gt"
   },
   {
     "front": "password box",
-    "back": "<input type=\"password\" name=\"pwd\">"
+    "back": "&ltinput type=\"password\" name=\"pwd\"&gt"
   },
   {
     "front": "radio buttons",
-    "back": "<form> <input type=\"radio\" name=\"sex\" value=\"male\">Male<br> <input type=\"radio\" name=\"sex\" value=\"female\">Female </form>"
+    "back": "&ltform&gt &ltinput type=\"radio\" name=\"sex\" value=\"male\"&gtMale&ltbr&gt &ltinput type=\"radio\" name=\"sex\" value=\"female\"&gtFemale &lt/form&gt"
   },
   {
     "front": "checkboxes",
-    "back": "<form> <input type=\"checkbox\" name=\"vehicle\" value=\"Bike\">I have a bike<br> <input type=\"checkbox\" name=\"vehicle\" value=\"Car\">I have a car </form>"
+    "back": "&ltform&gt &ltinput type=\"checkbox\" name=\"vehicle\" value=\"Bike\"&gtI have a bike&ltbr&gt &ltinput type=\"checkbox\" name=\"vehicle\" value=\"Car\"&gtI have a car &lt/form&gt"
   },
   {
     "front": "simple form with submit button",
-    "back": "<!-- Simple form which will send a GET request --> <form action=\"\">  <label for=\"GET-name\">Name:</label>  <input id=\"GET-name\" type=\"text\" name=\"name\">  <input type=\"submit\" value=\"Save\"> </form>  <!-- Simple form which will send a POST request --> <form action=\"\" method=\"post\">  <label for=\"POST-name\">Name:</label>  <input id=\"POST-name\" type=\"text\" name=\"name\">  <input type=\"submit\" value=\"Save\"> </form>"
+    "back": "&lt!-- Simple form which will send a GET request --&gt &ltform action=\"\"&gt  &ltlabel for=\"GET-name\"&gtName:&lt/label&gt  &ltinput id=\"GET-name\" type=\"text\" name=\"name\"&gt  &ltinput type=\"submit\" value=\"Save\"&gt &lt/form&gt  &lt!-- Simple form which will send a POST request --&gt &ltform action=\"\" method=\"post\"&gt  &ltlabel for=\"POST-name\"&gtName:&lt/label&gt  &ltinput id=\"POST-name\" type=\"text\" name=\"name\"&gt  &ltinput type=\"submit\" value=\"Save\"&gt &lt/form&gt"
   },
   {
     "front": "drop-down list",
-    "back": "<!-- The second value will be selected initially --> <select name=\"select\">  <option value=\"value1\">Value 1</option>  <option value=\"value2\" selected>Value 2</option>  <option value=\"value3\">Value 3</option> </select>"
+    "back": "&lt!-- The second value will be selected initially --&gt &ltselect name=\"select\"&gt  &ltoption value=\"value1\"&gtValue 1&lt/option&gt  &ltoption value=\"value2\" selected&gtValue 2&lt/option&gt  &ltoption value=\"value3\"&gtValue 3&lt/option&gt &lt/select&gt"
   },
   {
     "front": "input checked events",
@@ -41,6 +41,6 @@
   },
   {
     "front": "label with for attribute",
-    "back": "<!-- Simple label example with for attribute --> <label for=\"Name\">Click me</label> <input type=\"text\" id=\"Name\" name=\"Name\" />  <!-- or more simply --> <label>Click me <input type=\"text\" id=\"Name\" name=\"Name\" /></label>"
+    "back": "&lt!-- Simple label example with for attribute --&gt &ltlabel for=\"Name\"&gtClick me&lt/label&gt &ltinput type=\"text\" id=\"Name\" name=\"Name\" /&gt  &lt!-- or more simply --&gt &ltlabel&gtClick me &ltinput type=\"text\" id=\"Name\" name=\"Name\" /&gt&lt/label&gt"
   }
 ]

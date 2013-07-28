@@ -5,6 +5,6 @@
     },
     {
         "front": "table markup",
-        "back": "<table>  <tr>   <td>Name:</td>   <td><input type=\"text\"></td>  </tr> </table>"
+        "back": "&lttable&gt  &lttr&gt   &lttd&gtName:&lt/td&gt   &lttd&gt&ltinput type=\"text\"&gt&lt/td&gt  &lt/tr&gt &lt/table&gt"
     }
 ]

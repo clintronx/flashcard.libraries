@@ -1,98 +1,98 @@
 [
     {
         "front": "Element types: normal flow",
-        "back": "Normal flow - left-to-right, top-to-bottom rendering of text in Western Lang most elements are in normal flow only way to leave it is to be floated or positioned"
+        "back": "<p><strong>Normal flow</strong></p><ul><li>left-to-right, top-to-bottom rendering of text in Western Lang</li><li>most elements are in normal flow</li><li>the only way to leave normal flow&nbsp;is to be floated or positioned</li></ul>"
     },
     {
         "front": "Element types: nonreplaced element",
-        "back": "nonreplaced elemment - an element whose content is contained within the document"
+        "back": "<p><strong>nonreplaced elemment</strong></p><ul><li>an element whose content is contained within the document</li></ul>"
     },
     {
         "front": "Element types: replaced element",
-        "back": "replaced element - an element that serves as a placeholder for something else. img is the classic example"
+        "back": "<p><strong>replaced element</strong></p><ul><li>an element that serves as a placeholder for something else.</li><li>img is the classic example</li></ul>"
     },
     {
         "front": "Element types: block-level element",
-        "back": "block-level element - an element such as a paragraph, heading, or div. These elements generate newlines both before and after their boxes"
+        "back": "<p><strong>block-level element</strong></p><ul><li>an element such as a paragraph, heading, or div</li><li>These elements generate newlines both before and after their boxes</li></ul>"
     },
     {
         "front": "Element types: inline element",
-        "back": "inline element - an element such as strong or span. these elements do not generate 'line breaks' before or after themselves and they are decendents of block-level elements"
+        "back": "<p><strong>inline element</strong></p><ul><li>an element such as strong or span</li><li>these elements do not generate &#39;line breaks&#39; before or after themselves</li><li>inline elements are decendents of block-level elements</li></ul>"
     },
     {
         "front": "Element types: root element",
-        "back": "root element - the element at the top of the document tree. In HTML documents, this is the html element"
+        "back": "<p><strong>root element</strong></p><ul>    <li>the element at the top of the document tree</li>    <li>In HTML documents, this is the html element</li></ul>"
     },
     {
         "front": "block-level elements: horizontal formatting",
-        "back": "margin-left(auto) border-left padding-left width(auto) padding-right border-right margin-right(auto)"
+        "back": "<ul>    <li>margin-left(auto)</li>    <li>border-left padding-left</li>    <li>width(auto)</li>    <li>padding-right</li>    <li>border-right</li>    <li>margin-right(auto)</li></ul>"
     },
     {
         "front": "block-level elements: vertical formatting",
-        "back": "margin-top(auto) border-top padding-top height(auto) padding-bottom border-bottom margin-bottom(auto)"
+        "back": "<ul>    <li>margin-top(auto)</li>    <li>border-top</li>    <li>padding-top</li>    <li>height(auto)</li>    <li>padding-bottom</li>    <li>border-bottom</li>    <li>margin-bottom(auto)</li></ul>"
     },
     {
         "front": "using auto - horizontal",
-        "back": "<div width='400px'><p>...</p></div>  p{margin-left: auto; margin-right: 100px; width: 100px;} /* 'auto' left margin evaluates to 200px */  p{margin-left: 100px; margin-right: 100px;} /* width evaluates to 200px */  (overconstrained) p{margin-left: 100px; margin-right: 100px; width: 100px;} /* right margin forced to be 200px */"
+        "back": "<pre>&ltdiv width=\"400px\"&gt&ltp&gt...&lt/p&gt&lt/div&gt</pre><br/>p{margin-left: auto; margin-right: 100px; width: 100px;}&nbsp;<br/>&ltspan style=\"line-height:1.6em\"&gt/* &#39;auto&#39; left margin evaluates to 200px */ &lt/span&gt&lt/p&gt&ltp&gt&ltspan style=\"line-height:1.6em\"&gtp{margin-left: 100px; margin-right: 100px;}<br/>/* width evaluates to 200px */&lt/span&gt&lt/p&gt&ltp&gt&ltspan style=\"line-height:1.6em\"&gt(overconstrained)<br/>p{margin-left: 100px; margin-right: 100px; width: 100px;}<br/>/* right margin forced to be 200px */&lt/span&gt&lt/p&gt"
     },
     {
         "front": "using more than one auto - horizontal",
-        "back": "<div width='400px'><p>...</p></div>  p{width: 100px; margin-left: auto; margin-right: auto;} /* margins evaluates to 150px */  p{width: auto; margin-left: auto; margin-right: 100px;} /* margin-left evaluates to 0, width to 300px */  if all three are set auto them margins are set to 0"
+        "back": "<pre>&lt;div width=\\&quot;400px\\&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;</pre><p>p{width: 100px; margin-left: auto; margin-right: auto;}<br />/* margins evaluates to 150px */</p><p>p{width: auto; margin-left: auto; margin-right: 100px;}<br />/* margin-left evaluates to 0, width to 300px */</p><p>if all three are set auto them margins are set to 0</p>"
     },
     {
         "front": "using auto - vertical",
-        "back": "simplest case, a block-level, normal-flow element with height: auto is rendered just high enough to enclose the line boxes of its inline content  if the block-level element has either top or bottom padding or top or bottom borders, then the height will be the distance from the top ofthe outer top margin edge of its topmost child, to the outer bottom margin edge of its bottommost child"
+        "back": "<p>simplest case, a block-level, normal-flow element with height: auto is rendered just high enough to enclose the line boxes of its inline content. If the block-level element has either top or bottom padding or top or bottom borders, then the height will be the distance from the top of the outer top margin edge of its topmost child, to the outer bottom margin edge of its bottommost child.</p>"
     },
     {
         "front": "clapsing of vertical adjacent margins",
-        "back": "note: colapsing behavior only applies to margins  li{margin-top: 10px; margin-bottom: 15px;} the distance between adjacent list items will be 15px not 25px"
+        "back": "<p>note: colapsing behavior only applies to margins</p><p>li{margin-top: 10px; margin-bottom: 15px;}</p><p>the distance between adjacent list items will be 15px not 25px</p>"
     },
     {
         "front": "inline elements - anonymous text",
-        "back": "anonymous text - string of text not contained in an inline element"
+        "back": "<p><strong>anonymous text </strong></p><ul>    <li>string of text not contained in an inline element</li></ul>"
     },
     {
         "front": "inline elements - em box",
-        "back": "em box - defined by the given font, otherwise known as the character box"
+        "back": "<p><strong>em box</strong></p><ul>    <li>defined by the given font, otherwise known as the character box</li></ul>"
     },
     {
         "front": "inline elements - content area",
-        "back": "content area - in nonreplaced elements: * box described by the em boxes of every character in the element strug together * the box described by the character glyphs in the element  in replaced elements: * the intrisic height of the element plus any margins, borders, or padding"
+        "back": "<p><strong>content area</strong></p><p>in nonreplaced elements:</p><ul>    <li>box described by the em boxes of every character in the element strug together</li></ul><p>in replaced elements:</p><ul>    <li>the box described by the character glyphs in the element&nbsp;</li>    <li>the intrisic height of the element plus any margins, borders, or padding</li></ul>"
     },
     {
         "front": "inline elements - leading",
-        "back": "leading - the difference between the values of font-size and line-height"
+        "back": "<p><strong>leading</strong></p><ul>    <li>the difference between the values of font-size and line-height</li></ul>"
     },
     {
         "front": "inline elements - inline box",
-        "back": "inline box - box described by the addition of the leading to the content area"
+        "back": "<p><strong>inline box</strong></p><ul>    <li>box described by the addition of the leading to the content area</li></ul>"
     },
     {
         "front": "inline elements - line box",
-        "back": "line box - shortest box that bounds the highest and lowest points on the inline boxes that are found in the line"
+        "back": "<p><strong>line box</strong></p><ul>    <li>shortest box that bounds the highest and lowest points on the inline boxes that are found in the line</li></ul>"
     },
     {
         "front": "inline nonreplaced elements - building boxes",
-        "back": "for inline nonreplaced or anonymous text, the value of font-size determines the height of content area. line height needs to be considered, font-size of 15px and line-height of 21px  content area is 21px inline nonreplaced element of 24px inside a block-level element of font-size 12px and line-height 12px will be 12px have a 12px line-height and 24px content height so the inline box is smaller that the content area"
+        "back": "<p>for inline nonreplaced or anonymous text</p><ul>    <li>the value of font-size determines the height of content area.</li>    <li>line height needs to be considered</li>    <li>font-size of 15px and line-height of 21px &nbsp;= content area of&nbsp;21px</li></ul><p>inline nonreplaced</p><ul>    <li>element of 24px inside a block-level element of font-size 12px and line-height 12px will be 12px and have a 12px line-height and 24px content height so&nbsp;the inline box is smaller that the content area</li></ul>"
     },
     {
         "front": "inline nonreplaced elements - vertical alignment",
-        "back": "if you change the vertical alignment on the inline boxes, this also pushes up the top of the line box upward"
+        "back": "<p>if you change the vertical alignment on the inline boxes, this also pushes up the top of the line box upward</p>"
     },
     {
         "front": "inline nonreplaced elements - scaling line height",
-        "back": "the best way to set line-height is to use a raw numnber as the value. this becomes the scaling factor and is inherited not computed example:line-height to be 1.5x their font-size: body{line-height: 1.5;}"
+        "back": "<ul>    <li>the best way to set line-height is to use a raw numnber as the value</li>    <li>this becomes the scaling factor and is inherited not computed</li></ul><p><span style=\"line-height:1.6em\">exam</span><span style=\"line-height:1.6em\">ple:</span></p><p><span style=\"line-height:1.6em\">line-height to be 1.5x the&nbsp;font-size: </span></p><p><span style=\"line-height:1.6em\">body{line-height: 1.5;}</span></p>"
     },
     {
         "front": "inline replaced elements",
-        "back": "inline replaced elements have an intrisic height and width that can cause the line box to become taler than normal. This doesn't change the line-height for any element in the line, including the replaced element itself. instead the line box grows to the entirety of the replaced element"
+        "back": "<ul>    <li>inline replaced elements have an intrisic height and width that can cause the line box to become taler than normal.</li>    <li>This doesn&#39;t change the line-height for any element in the line, including the replaced element itself.</li>    <li>instead the line box grows to the entirety of the replaced element</li></ul>"
     },
     {
         "front": "inline block elements",
-        "back": "inline-block - a hybrid of block-level and inline elements. An inline-block relates to other elements and content as an inline box."
+        "back": "<p><strong>inline-block</strong></p><ul>    <li>a hybrid of block-level and inline elements</li>    <li>An inline-block relates to other elements and content as an inline box.</li></ul>"
     },
     {
         "front": "run-in elements",
-        "back": "run-in element - block/inline hybrid that can make some block-level elements an inline part of a following element. Used in typography where a heading will appear as part of a paragraph of text"
+        "back": "<p><strong>run-in element</strong></p><ul>    <li>block/inline hybrid that can make some block-level elements an inline part of a following element</li>    <li>Used in typography where a heading will appear as part of a paragraph of text</li></ul>"
     }
 ]

@@ -25,7 +25,7 @@
     },
     {
         "front": "multiple classes",
-        "back": "<p class='warning urgent'>...</p>  .warning { font-weight: bold; } .urgent { font-style: italic; } .warning.urgent { background: silver; }  chaning two classes together will only select elements with both classes defined in any order"
+        "back": "&ltp class='warning urgent'&gt...&lt/p&gt  .warning { font-weight: bold; } .urgent { font-style: italic; } .warning.urgent { background: silver; }  chaning two classes together will only select elements with both classes defined in any order"
     },
     {
         "front": "id selectors",
@@ -57,7 +57,7 @@
     },
     {
         "front": "selecting children",
-        "back": "h1 > strong { color: red; }  any strong element that is a child of an h1 element"
+        "back": "h1 &gt strong { color: red; }  any strong element that is a child of an h1 element"
     },
     {
         "front": "selecting adjacesnt siblings",
@@ -65,7 +65,7 @@
     },
     {
         "front": "select any ul element that immediately follows a sibling table element that is descendent fron a body element that is itself a child of an html element",
-        "back": " html > body table + ul { color: red; }"
+        "back": " html &gt body table + ul { color: red; }"
     },
     {
         "front": "Pseudo-Classes and Pseudo-Elements",

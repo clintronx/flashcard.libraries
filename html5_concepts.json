@@ -1,11 +1,11 @@
 [
   {
     "front": "html5 doctype tag",
-    "back": "<!DOCTYPE html>"
+    "back": "&lt!DOCTYPE html&gt"
   },
   {
     "front": "character set",
-    "back": "<meta charset='utf-8' >"
+    "back": "&ltmeta charset='utf-8' &gt"
   },
   {
     "front": "Content Types",
@@ -45,47 +45,47 @@
   },
   {
     "front": "Sectioning Elements: Header",
-    "back": "Header content (for a page or a section of a page)  <header>  <h1>Header</h1. </header>"
+    "back": "Header content (for a page or a section of a page)  &ltheader&gt  &lth1&gtHeader&lt/h1. &lt/header&gt"
   },
   {
     "front": "Sectioning Elements: Footer",
-    "back": "Footer content (for a page or a section of a page)  <footer>  <h2>footer</h2> </footer>"
+    "back": "Footer content (for a page or a section of a page)  &ltfooter&gt  &lth2&gtfooter&lt/h2&gt &lt/footer&gt"
   },
   {
     "front": "Sectioning Elements: Section",
-    "back": "a section of a web page  <section>  <article>....</article> </section>"
+    "back": "a section of a web page  &ltsection&gt  &ltarticle&gt....&lt/article&gt &lt/section&gt"
   },
   {
     "front": "Sectioning Elements: Article",
-    "back": "Independent article content  <article>  <header>...</header>  <p>...</p>  <footer>...</footer> </article>"
+    "back": "Independent article content  &ltarticle&gt  &ltheader&gt...&lt/header&gt  &ltp&gt...&lt/p&gt  &ltfooter&gt...&lt/footer&gt &lt/article&gt"
   },
   {
     "front": "Sectioning Elements: Aside",
-    "back": "Related content or pull quotes  <aside>  <p>...</p> </aside>"
+    "back": "Related content or pull quotes  &ltaside&gt  &ltp&gt...&lt/p&gt &lt/aside&gt"
   },
   {
     "front": "Sectioning Elements: Nav",
-    "back": "Navigational aids  <nav>  <a href='http://localhost'>link1</a> </nav>"
+    "back": "Navigational aids  &ltnav&gt  &lta href='http://localhost'&gtlink1&lt/a&gt &lt/nav&gt"
   },
   {
     "front": "stylesheet tag",
-    "back": "<link rel='stylesheet' href='css/html.css'>  <style type='text/css'>  h1{ font-size: 300%; } </style>"
+    "back": "&ltlink rel='stylesheet' href='css/html.css'&gt  &ltstyle type='text/css'&gt  h1{ font-size: 300%; } &lt/style&gt"
   },
   {
     "front": "javascript tag",
-    "back": "<script src='js/html5.js'></script>  <script type='text/javascript>  function example () { } </script>"
+    "back": "&ltscript src='js/html5.js'&gt&lt/script&gt  &ltscript type='text/javascript&gt  function example () { } &lt/script&gt"
   },
   {
     "front": "getElementById()",
-    "back": "returns the element with specified id attribute value  <div id='foo'> document.getElementById('foo');"
+    "back": "returns the element with specified id attribute value  &ltdiv id='foo'&gt document.getElementById('foo');"
   },
   {
     "front": "getElementsByName()",
-    "back": "returns ALL elements whose name attribute has the specified value  <input type='text' name='foo'> document.getElementsByName('foo');"
+    "back": "returns ALL elements whose name attribute has the specified value  &ltinput type='text' name='foo'&gt document.getElementsByName('foo');"
   },
   {
     "front": "getElementsByTagName()",
-    "back": "return ALL elements whose tag name matches the specified value  <input type='text'> document.getElementsByTagName('input');"
+    "back": "return ALL elements whose tag name matches the specified value  &ltinput type='text'&gt document.getElementsByTagName('input');"
   },
   {
     "front": "querySelector()",
@@ -97,7 +97,7 @@
   },
   {
     "front": "html5 example",
-    "back": "<!DOCTYPE html> <html>  <head>   <meta charset='utf-8'>   <title>Html5</title>   <link rel='stylesheet' href='css/html5.css'>  </head>  <body>   <nav>    <h3>NAV</h3>    <a href='http://www.example.com'>link1</a>   </nav>  </body> </html>"
+    "back": "&lt!DOCTYPE html&gt &lthtml&gt  &lthead&gt   &ltmeta charset='utf-8'&gt   &lttitle&gtHtml5&lt/title&gt   &ltlink rel='stylesheet' href='css/html5.css'&gt  &lt/head&gt  &ltbody&gt   &ltnav&gt    &lth3&gtNAV&lt/h3&gt    &lta href='http://www.example.com'&gtlink1&lt/a&gt   &lt/nav&gt  &lt/body&gt &lt/html&gt"
   },
   {
     "front": "geolocation: getCurrentPosition()",
@@ -113,11 +113,11 @@
   },
   {
     "front": "video tag",
-    "back": "<video autobuffer='true' width='400px' height='300px' autoplay>  <source src='movie.mp4'>  No Html5 video support </video>"
+    "back": "&ltvideo autobuffer='true' width='400px' height='300px' autoplay&gt  &ltsource src='movie.mp4'&gt  No Html5 video support &lt/video&gt"
   },
   {
     "front": "audio tag",
-    "back": "<audio controls autoplay>  <source src='sound.mp3'>  No Sound Support </audio>"
+    "back": "&ltaudio controls autoplay&gt  &ltsource src='sound.mp3'&gt  No Sound Support &lt/audio&gt"
   },
   {
     "front": "communications api: send message",
@@ -149,11 +149,11 @@
   },
   {
     "front": "Html5 form elements api",
-    "back": "<label>Email: <input type='email' placholder='name@domain.com' autofocus required></label> <label>Text: <input type='text' autocomplete='on'></label> <label>Url: <input type='url' placholder='http://www.example.com'></label> <label>Search: <input type='search'></label> <label>Tel: <input type='tel' placholder='111-222-3333'></label> <label>Range: <input id='confidence' type='range' min='0' max='10' step='2'"
+    "back": "&ltlabel&gtEmail: &ltinput type='email' placholder='name@domain.com' autofocus required&gt&lt/label&gt &ltlabel&gtText: &ltinput type='text' autocomplete='on'&gt&lt/label&gt &ltlabel&gtUrl: &ltinput type='url' placholder='http://www.example.com'&gt&lt/label&gt &ltlabel&gtSearch: &ltinput type='search'&gt&lt/label&gt &ltlabel&gtTel: &ltinput type='tel' placholder='111-222-3333'&gt&lt/label&gt &ltlabel&gtRange: &ltinput id='confidence' type='range' min='0' max='10' step='2'"
   },
   {
     "front": "Html5 for datalist",
-    "back": "<datalist id='contactList'>  <option value='clinton.ayres@gmail.com' label='clintronx'>  <option value='captain.america@gmail.com' label='first avenger'"
+    "back": "&ltdatalist id='contactList'&gt  &ltoption value='clinton.ayres@gmail.com' label='clintronx'&gt  &ltoption value='captain.america@gmail.com' label='first avenger'"
   },
   {
     "front": "Html5 form valueAsNumber()",
@@ -161,7 +161,7 @@
   },
   {
     "front": "Html5 from validation event listener",
-    "back": "<form id='register'>  <p><label id='name'>Name: </label><input type='text'></p>  <input type='submit' name='register' value='Register'> </form> document.register.addEventListener('invalid', invalidHandler, true);"
+    "back": "&ltform id='register'&gt  &ltp&gt&ltlabel id='name'&gtName: &lt/label&gt&ltinput type='text'&gt&lt/p&gt  &ltinput type='submit' name='register' value='Register'&gt &lt/form&gt document.register.addEventListener('invalid', invalidHandler, true);"
   },
   {
     "front": "WebWorkers",
@@ -181,7 +181,7 @@
   },
   {
     "front": "Html5 offline api",
-    "back": "add offline support by including a manifest  window.applicationCache  <!DOCTYPE html> <html manifest='application.manifest'> ... </html>  (applicaiton.manifest)  CACHE MANIFEST example.html example.js example.css example.png"
+    "back": "add offline support by including a manifest  window.applicationCache  &lt!DOCTYPE html&gt &lthtml manifest='application.manifest'&gt ... &lt/html&gt  (applicaiton.manifest)  CACHE MANIFEST example.html example.js example.css example.png"
   },
   {
     "front": "Html5 offline events",

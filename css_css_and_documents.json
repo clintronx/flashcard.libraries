@@ -1,11 +1,11 @@
 [
   {
     "front": "replaced elemets",
-    "back": "replaced elemets are those where the element's content that is replaced by something that is not directly represented in the document content  img and input elements are replaced elements  example: <img src='example.png/>"
+    "back": "replaced elemets are those where the element's content that is replaced by something that is not directly represented in the document content  img and input elements are replaced elements  example: &ltimg src='example.png/&gt"
   },
   {
     "front": "nonreplaced elements",
-    "back": "nonreplaced elements are the majority of HTML elements. There content is presented by the user agent inside a box genreated by the element itself  example: <span>nonreplaced</span>"
+    "back": "nonreplaced elements are the majority of HTML elements. There content is presented by the user agent inside a box genreated by the element itself  example: &ltspan&gtnonreplaced&lt/span&gt"
   },
   {
     "front": "display roles",
@@ -13,15 +13,15 @@
   },
   {
     "front": "display specifications",
-    "back": "block-level cannot be contained in inline-level elements in HTML - violation. CSS can change add this behavior:  <p><em>example</em></p>  p {display: inline;}  em {display: block}"
+    "back": "block-level cannot be contained in inline-level elements in HTML - violation. CSS can change add this behavior:  &ltp&gt&ltem&gtexample&lt/em&gt&lt/p&gt  p {display: inline;}  em {display: block}"
   },
   {
     "front": "link tag",
-    "back": "<link rel='stylesheet' type='text/css' href='css/html.css' media='all' />  common media attributes: print projection screen all"
+    "back": "&ltlink rel='stylesheet' type='text/css' href='css/html.css' media='all' /&gt  common media attributes: print projection screen all"
   },
   {
     "front": "@import directive",
-    "back": "note: must be placed before other css rules or it won't work at all  <style type='text/css'> @import url(style.css); h1 {color: grey} </style>"
+    "back": "note: must be placed before other css rules or it won't work at all  &ltstyle type='text/css'&gt @import url(style.css); h1 {color: grey} &lt/style&gt"
   },
   {
     "front": "css comments",

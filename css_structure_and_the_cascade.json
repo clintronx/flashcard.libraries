@@ -21,7 +21,7 @@
     },
     {
         "front": "sorting by weight",
-        "back": "weight - if two rules apply to an element and one is marked !important the important rule wins out:  p{color: blue !important;} <p style='color: black;'>..</p> css style wins"
+        "back": "weight - if two rules apply to an element and one is marked !important the important rule wins out:  p{color: blue !important;} &ltp style='color: black;'&gt..&lt/p&gt css style wins"
     },
     {
         "front": "sorting by origin",
