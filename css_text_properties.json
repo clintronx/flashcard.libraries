@@ -1,0 +1,46 @@
+[
+    {
+        "front": "indenting text",
+        "back": "p {text-indent: 3em;}"
+    },
+    {
+        "front": "horizontal alignment",
+        "back": "p {text-align: justify;}"
+    },
+    {
+        "front": "vertical alignment",
+        "back": "img {vertical-align: baseline;}"
+    },
+    {
+        "front": "Height of lines",
+        "back": "p.one {line-height: 14px; font-size: 13px;}"
+    },
+    {
+        "front": "word spacing",
+        "back": "p.spread {word-spacing: 0.5em;}"
+    },
+    {
+        "front": "letter spacing",
+        "back": "p {letter-spacing: 0.25em;}"
+    },
+    {
+        "front": "text transformation",
+        "back": "h1 {text-transform: capitalize;}"
+    },
+    {
+        "front": "text decoration",
+        "back": "p.emph {text-decoration: underline;}"
+    },
+    {
+        "front": "text shadow",
+        "back": "p {color: black; text-shadow: 1em 1em gray, -1em -1em silver;}"
+    },
+    {
+        "front": "white space",
+        "back": "code {white-space: pre;}"
+    },
+    {
+        "front": "text direction",
+        "back": "*:lang(ar), *:lang(he) {direction: rtl;}"
+    }
+]

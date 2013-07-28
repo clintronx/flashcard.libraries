@@ -1,0 +1,230 @@
+[
+  {
+    "front": "display",
+    "back": "values: none | block | inline-block | list-item |  run-in | table | inline-table | table-row-group |  table-header-group | table-footer-group | table-row |  table-column-group | table-column | table-cell | table-caption | inherit initial value: inline applies to: all elements"
+  },
+  {
+    "front": "font-family",
+    "back": "values: [[<family-name> | <generic-family>],]* [<family-name> | <generic-family] | inherit initial value: user agent specific applies to: all elements"
+  },
+  {
+    "front": "font-weight",
+    "back": "values: normal | bold | bolder | lighter | 100 |...| 900 | initial value:normal  applies to:all elements "
+  },
+  {
+    "front": "font-size",
+    "back": "values: xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | <length> | <percentage> | inherit | initial value: medium applies to: all elements"
+  },
+  {
+    "front": "font-style",
+    "back": "values: italic | oblique | normal | inherit initial value: normal applies to: all elements"
+  },
+  {
+    "front": "font-variant",
+    "back": "values: small-caps | normal | inherit initial value: normal applies to: all elements"
+  },
+  {
+    "front": "font-stretch",
+    "back": "values: normal | wider | narrower | ultra-condensed | extra-condensed | condensed | semi-condensed | expanded | extra-expanded | ultra-expanded | inherit initial value: normal applies to: all elements"
+  },
+  {
+    "front": "font-size-adjust",
+    "back": "values: <number> | none | inherit initial value: none applies to: all elements"
+  },
+  {
+    "front": "font",
+    "back": "values: [[<font-style>||<font-family>||<font-weight>]?<font-size>[/<line-height>]?<font-family>]|caption|icon|menu|message-box|small-caption|status-bar|inherit initial value: (refer to individual properties) applies to: all elements"
+  },
+  {
+    "front": "text-indent",
+    "back": "values: <length>|<percentage>|inherit initial value: 0 applies to: Block-level elements"
+  },
+  {
+    "front": "text-align",
+    "back": "values: left|center|right|justify|inherit initial value: user agent-specific applies to: Block-level elements"
+  },
+  {
+    "front": "line-height",
+    "back": "values: <length>|<percentage>|<number>|normal|inherit initial value: normal applies to: all elements"
+  },
+  {
+    "front": "vertical-align",
+    "back": "values: baseline|sub|super|top|text-top|middle|bottom|text-bottom|<percentage>|<length>|inherit initial value: baseline applies to: inline elements and table cells"
+  },
+  {
+    "front": "word-spacing",
+    "back": "values: <length>|normal|inherit initial value: normal applies to: all elements"
+  },
+  {
+    "front": "letter-spacing",
+    "back": "values: <length>|normal|inherit initial value: normal applies to: all elements"
+  },
+  {
+    "front": "text-transform",
+    "back": "values: uppercase|lowercase|capitalize|none|inherit initial value: none applies to: all elements"
+  },
+  {
+    "front": "text-decoration",
+    "back": "values: none|[underline||overline||line-through]|inherit initial value: none applies to: all elements"
+  },
+  {
+    "front": "text-shadow",
+    "back": "values: none|[<color>||<length><length><length>? ,]*[<color>||<length><length><length>?]|inherit initial value: none applies to: all elements"
+  },
+  {
+    "front": "white-space",
+    "back": "values: normal|nowrap|pre|pre-wrap|pre-line|inherit initial value: normal applies to: Block-level elements"
+  },
+  {
+    "front": "direction",
+    "back": "values: ltr|rtl|inherit initial value: ltr applies to: all elements"
+  },
+  {
+    "front": "width",
+    "back": "values: <length>|<percentage>|auto|inherit initial value: auto applies to: Block-level and replaced elements"
+  },
+  {
+    "front": "height",
+    "back": "values: <length>|<percentage>|auto|inherit initial value: auto applies to: Block-level and replaced elements"
+  },
+  {
+    "front": "margin",
+    "back": "values: <length>|<percentage>|auto|{1,4}|inline-block initial value: not defined applies to: all elements"
+  },
+  {
+    "front": "border-style",
+    "back": "values: [none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]{1,4}|inherit initial value: Not defined applies to: all elements"
+  },
+  {
+    "front": "border-top-style,border-right-style,border-bottom-style, border-left-style",
+    "back": "values: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit initial value: none applies to: all elements"
+  },
+  {
+    "front": "border-width",
+    "back": "values: [thin|medium|thick|<length>]{1,4}|inherit initial value: not defined applies to: all elements"
+  },
+  {
+    "front": "border-top-width,border-right-width,border-bottom-width,border-left-width",
+    "back": "values: thin|medium|thick|<length>|inherit initial value: medium applies to: all elements"
+  },
+  {
+    "front": "border-color",
+    "back": "values: [<color>|tranparent]{1,4}|inherit initial value: not defined applies to: all elements"
+  },
+  {
+    "front": "border-top-color,border-right-color,border-bottom-color,border-left-color",
+    "back": "values: <color>|tranparent|inherit initial value: the value of color for the element applies to: all elements"
+  },
+  {
+    "front": "border-top,border-right,border-bottom,border-left",
+    "back": "values: [<border-width>||<border-style>||<border-color>]|inherit initial value: not defined applies to: all elements"
+  },
+  {
+    "front": "border",
+    "back": "values: [<border-width>||<border-style>||<border-color>]|inherit initial value: refer to individual properties applies to: all elements"
+  },
+  {
+    "front": "padding",
+    "back": "values: [<length>|<percentage>]{1.4}|inherit initial value: not defined applies to: all elements"
+  },
+  {
+    "front": "padding-top,padding-right,padding-bottom,padding-left",
+    "back": "values: <length>|<percentage>|inherit initial value: 0 applies to: all elements"
+  },
+  {
+    "front": "color",
+    "back": "values: <color>|inherit initial value: uer agent-specific applies to: all elements"
+  },
+  {
+    "front": "background-color",
+    "back": "values: <color>|tranparent|inherit initial value: transparent applies to: all elements"
+  },
+  {
+    "front": "background-image",
+    "back": "values: <uri>|none|inherit initial value: none applies to: all elements"
+  },
+  {
+    "front": "background-repeat",
+    "back": "values: repeat|repeat-x|repeat-y|no-repeat|inherit initial value: repeat applies to: all elements"
+  },
+  {
+    "front": "background-position",
+    "back": "values: [[<percentage>|<length>|left|center|right][<percentage>]|<length>|top|center|bottom]?]||[[left|center|right]||[top|center|bottom]]|inherit initial value: 0% 0% applies to: Block-level and replaced elements"
+  },
+  {
+    "front": "background-attachment",
+    "back": "values: scroll|fixed|inherit initial value: scroll applies to: all elements"
+  },
+  {
+    "front": "background",
+    "back": "values: [<background-color>||<background-image>||<background-repeat>||<background-attachment>||<background-position>]|inherit initial value: refer to individual properties applies to: all elements"
+  },
+  {
+    "front": "float",
+    "back": "values: left|right|none|inherit initial value: none applies to: all elements"
+  },
+  {
+    "front": "clear",
+    "back": "values: left|right|both|none|inherit initial value: none applies to: Block-level elements"
+  },
+  {
+    "front": "position",
+    "back": "values: static|relative|absolute|fixed|inherit initial value: static applies to: all elements"
+  },
+  {
+    "front": "top,right,bottom,left",
+    "back": "values: <length>|<percentage>|auto|inherit initial value: auto applies to: positioned elements with value other than static"
+  },
+  {
+    "front": "min-width,min-height",
+    "back": "values: <length>|<percentage>|inherit initial value: 0 applies to: all elements except nonreplaced inline elements or table elements"
+  },
+  {
+    "front": "max-width,max-height",
+    "back": "values: <length>|<percentage>|none|inherit initial value: 0 applies to: all elements except nonreplaced inline elements or table elements"
+  },
+  {
+    "front": "overflow",
+    "back": "values: visible|hidden|scroll|auto|inherit initial value: visible applies to: Block-level and replaced elements"
+  },
+  {
+    "front": "clip",
+    "back": "values: rect(top,right,bottom,left)|auto|inherit initial value: auto applies to: Absolutely positioned elements"
+  },
+  {
+    "front": "visibility",
+    "back": "values: visible|hidden|collapse|inherit initial value: visible applies to: all elements"
+  },
+  {
+    "front": "z-index",
+    "back": "values: <integer>|auto|inherit initial value: auto applies to: positioned elements"
+  },
+  {
+    "front": "table-layout",
+    "back": "values: auto|fixed|inherit initial value: auto applies to: table or inline-table elements"
+  },
+  {
+    "front": "list-style-type",
+    "back": "values: disc|circle|square|decimal|decimal-leading-zero|upper-alpha|lower-alpha|upper-roman|lower-roman|lower-greek|...|none|inherit initial value: disc applies to: elements with display value list-item"
+  },
+  {
+    "front": "list-style-image",
+    "back": "values: <uri>|none|inherit initial value: none applies to: elements with display value list-item"
+  },
+  {
+    "front": "content",
+    "back": "values: normal|[<string>|<uri>|<counter>|attr(<identifier>)|open-quote|close-quote|no-open-quote|no-close-quote]+|inherit initial value: normal applies to: :before or :after pseudo-elements"
+  },
+  {
+    "front": "quotes",
+    "back": "values: [<string><string>]+|none|inherit initial value: user agent-dependent applies to: all elements"
+  },
+  {
+    "front": "counter-reset",
+    "back": "values: [<identifier><integer>?]+|none|inherit initial value: user agent-dependent applies to: all elements"
+  },
+  {
+    "front": "counter-increment",
+    "back": "values: [<identifier><integer>?]+|none|inherit initial value: user agent-dependent applies to: all elements"
+  }
+]

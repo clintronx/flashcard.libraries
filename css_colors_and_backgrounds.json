@@ -1,0 +1,34 @@
+[
+    {
+        "front": "color",
+        "back": "p {color: green;}"
+    },
+    {
+        "front": "background-color",
+        "back": "p {background-color: gray; padding: 10px;}"
+    },
+    {
+        "front": "background-image",
+        "back": "body {background-image: url(teddy.png);}"
+    },
+    {
+        "front": "background-repeat",
+        "back": "body {background-image: url(http://www.example.com/teddy.png); background-repeat: repeat-y;}"
+    },
+    {
+        "front": "background positioning",
+        "back": "body {background-image: url(teddy.png); background-repeat: no-repeat; background-position: center;}  p {background-image: url(teddy.png); background-repeat: no-repeat; background-position: top right;} p {background-image: url(teddy.png); background-repeat: no-repeat; background-position: 50% 50%;}"
+    },
+    {
+        "front": "background positioning percentages",
+        "back": "p {background-image: url(teddy.png); background-repeat: no-repeat;} p.c1 { background-position: 0% 0%;} /* top left */ p.c2 { background-position: 50% 50%;} /* center center */ p.c3 { background-position: 100% 100%;} /* bottom left */ p.c4 { background-position: 0% 100%;} /* bottom left */ p.c5 { background-position: 100% 0%;} /* top right */"
+    },
+    {
+        "front": "background attachment",
+        "back": "body {background-image: url(http://www.example.com/teddy.png); background-repeat: repeat-y; background-attachment: fixed;}  fixes the image in repect to the viewing area and immune to scrolling if background-attachment:scroll them image travels with view"
+    },
+    {
+        "front": "background",
+        "back": "body {background: white url(teddy.png) top left repeat-y fixed;} /* background-color background-image background-position background-repeat background-attachment */"
+    }
+]

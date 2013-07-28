@@ -1,0 +1,46 @@
+[
+  {
+    "front": "simple table",
+    "back": "<p>Simple table</p> <table>  <tr>   <td>John</td>   <td>Doe</td>  </tr>  <tr>   <td>Jane</td>   <td>Doe</td>  </tr> </table>"
+  },
+  {
+    "front": "Simple table with header",
+    "back": "<p>Simple table with header</p> <table>  <tr>   <th>First name</th>   <th>Last name</th>  </tr>  <tr>   <td>John</td>   <td>Doe</td>  </tr>  <tr>   <td>Jane</td>   <td>Doe</td>  </tr> </table>"
+  },
+  {
+    "front": "Table with thead, tfoot, and tbody",
+    "back": "<p>Table with thead, tfoot, and tbody</p> <table>  <thead>   <tr>    <th>Header content 1</th>    <th>Header content 2</th>   </tr>  </thead>  <tfoot>   <tr>    <td>Footer content 1</td>    <td>Footer content 2</td>   </tr>  </tfoot>  <tbody>   <tr>    <td>Body content 1</td>    <td>Body content 2</td>   </tr>  </tbody> </table>"
+  },
+  {
+    "front": "A basic input box",
+    "back": "<!-- A basic input --> <input type=\"text\" name=\"input\" value=\"Type here\">"
+  },
+  {
+    "front": "password box",
+    "back": "<input type=\"password\" name=\"pwd\">"
+  },
+  {
+    "front": "radio buttons",
+    "back": "<form> <input type=\"radio\" name=\"sex\" value=\"male\">Male<br> <input type=\"radio\" name=\"sex\" value=\"female\">Female </form>"
+  },
+  {
+    "front": "checkboxes",
+    "back": "<form> <input type=\"checkbox\" name=\"vehicle\" value=\"Bike\">I have a bike<br> <input type=\"checkbox\" name=\"vehicle\" value=\"Car\">I have a car </form>"
+  },
+  {
+    "front": "simple form with submit button",
+    "back": "<!-- Simple form which will send a GET request --> <form action=\"\">  <label for=\"GET-name\">Name:</label>  <input id=\"GET-name\" type=\"text\" name=\"name\">  <input type=\"submit\" value=\"Save\"> </form>  <!-- Simple form which will send a POST request --> <form action=\"\" method=\"post\">  <label for=\"POST-name\">Name:</label>  <input id=\"POST-name\" type=\"text\" name=\"name\">  <input type=\"submit\" value=\"Save\"> </form>"
+  },
+  {
+    "front": "drop-down list",
+    "back": "<!-- The second value will be selected initially --> <select name=\"select\">  <option value=\"value1\">Value 1</option>  <option value=\"value2\" selected>Value 2</option>  <option value=\"value3\">Value 3</option> </select>"
+  },
+  {
+    "front": "input checked events",
+    "back": "/* any \"checkable\" element */ :checked {   width: 50px;   height: 50px; }  /* only radio elements */   input[type=\"radio\"]:checked {   margin-left: 25px; }  /* only checkbox elements */ input[type=\"checkbox\"]:checked {   display: none; }  /* only option elements */ option:checked {   color: red; }"
+  },
+  {
+    "front": "label with for attribute",
+    "back": "<!-- Simple label example with for attribute --> <label for=\"Name\">Click me</label> <input type=\"text\" id=\"Name\" name=\"Name\" />  <!-- or more simply --> <label>Click me <input type=\"text\" id=\"Name\" name=\"Name\" /></label>"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "front": "replaced elemets",
+    "back": "replaced elemets are those where the element's content that is replaced by something that is not directly represented in the document content  img and input elements are replaced elements  example: <img src='example.png/>"
+  },
+  {
+    "front": "nonreplaced elements",
+    "back": "nonreplaced elements are the majority of HTML elements. There content is presented by the user agent inside a box genreated by the element itself  example: <span>nonreplaced</span>"
+  },
+  {
+    "front": "display roles",
+    "back": "block-level elements - generate an element box that fills its parent element's content area and cannot have other elements at its sides inline-level elements - generate an element box within a line of text and do not break up the fow of that line"
+  },
+  {
+    "front": "display specifications",
+    "back": "block-level cannot be contained in inline-level elements in HTML - violation. CSS can change add this behavior:  <p><em>example</em></p>  p {display: inline;}  em {display: block}"
+  },
+  {
+    "front": "link tag",
+    "back": "<link rel='stylesheet' type='text/css' href='css/html.css' media='all' />  common media attributes: print projection screen all"
+  },
+  {
+    "front": "@import directive",
+    "back": "note: must be placed before other css rules or it won't work at all  <style type='text/css'> @import url(style.css); h1 {color: grey} </style>"
+  },
+  {
+    "front": "css comments",
+    "back": "/* comment here - mutli-line is ok too */  note: no other comments allowed"
+  }
+]

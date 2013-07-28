@@ -1,0 +1,98 @@
+[
+    {
+        "front": "Element types: normal flow",
+        "back": "Normal flow - left-to-right, top-to-bottom rendering of text in Western Lang most elements are in normal flow only way to leave it is to be floated or positioned"
+    },
+    {
+        "front": "Element types: nonreplaced element",
+        "back": "nonreplaced elemment - an element whose content is contained within the document"
+    },
+    {
+        "front": "Element types: replaced element",
+        "back": "replaced element - an element that serves as a placeholder for something else. img is the classic example"
+    },
+    {
+        "front": "Element types: block-level element",
+        "back": "block-level element - an element such as a paragraph, heading, or div. These elements generate newlines both before and after their boxes"
+    },
+    {
+        "front": "Element types: inline element",
+        "back": "inline element - an element such as strong or span. these elements do not generate 'line breaks' before or after themselves and they are decendents of block-level elements"
+    },
+    {
+        "front": "Element types: root element",
+        "back": "root element - the element at the top of the document tree. In HTML documents, this is the html element"
+    },
+    {
+        "front": "block-level elements: horizontal formatting",
+        "back": "margin-left(auto) border-left padding-left width(auto) padding-right border-right margin-right(auto)"
+    },
+    {
+        "front": "block-level elements: vertical formatting",
+        "back": "margin-top(auto) border-top padding-top height(auto) padding-bottom border-bottom margin-bottom(auto)"
+    },
+    {
+        "front": "using auto - horizontal",
+        "back": "<div width='400px'><p>...</p></div>  p{margin-left: auto; margin-right: 100px; width: 100px;} /* 'auto' left margin evaluates to 200px */  p{margin-left: 100px; margin-right: 100px;} /* width evaluates to 200px */  (overconstrained) p{margin-left: 100px; margin-right: 100px; width: 100px;} /* right margin forced to be 200px */"
+    },
+    {
+        "front": "using more than one auto - horizontal",
+        "back": "<div width='400px'><p>...</p></div>  p{width: 100px; margin-left: auto; margin-right: auto;} /* margins evaluates to 150px */  p{width: auto; margin-left: auto; margin-right: 100px;} /* margin-left evaluates to 0, width to 300px */  if all three are set auto them margins are set to 0"
+    },
+    {
+        "front": "using auto - vertical",
+        "back": "simplest case, a block-level, normal-flow element with height: auto is rendered just high enough to enclose the line boxes of its inline content  if the block-level element has either top or bottom padding or top or bottom borders, then the height will be the distance from the top ofthe outer top margin edge of its topmost child, to the outer bottom margin edge of its bottommost child"
+    },
+    {
+        "front": "clapsing of vertical adjacent margins",
+        "back": "note: colapsing behavior only applies to margins  li{margin-top: 10px; margin-bottom: 15px;} the distance between adjacent list items will be 15px not 25px"
+    },
+    {
+        "front": "inline elements - anonymous text",
+        "back": "anonymous text - string of text not contained in an inline element"
+    },
+    {
+        "front": "inline elements - em box",
+        "back": "em box - defined by the given font, otherwise known as the character box"
+    },
+    {
+        "front": "inline elements - content area",
+        "back": "content area - in nonreplaced elements: * box described by the em boxes of every character in the element strug together * the box described by the character glyphs in the element  in replaced elements: * the intrisic height of the element plus any margins, borders, or padding"
+    },
+    {
+        "front": "inline elements - leading",
+        "back": "leading - the difference between the values of font-size and line-height"
+    },
+    {
+        "front": "inline elements - inline box",
+        "back": "inline box - box described by the addition of the leading to the content area"
+    },
+    {
+        "front": "inline elements - line box",
+        "back": "line box - shortest box that bounds the highest and lowest points on the inline boxes that are found in the line"
+    },
+    {
+        "front": "inline nonreplaced elements - building boxes",
+        "back": "for inline nonreplaced or anonymous text, the value of font-size determines the height of content area. line height needs to be considered, font-size of 15px and line-height of 21px  content area is 21px inline nonreplaced element of 24px inside a block-level element of font-size 12px and line-height 12px will be 12px have a 12px line-height and 24px content height so the inline box is smaller that the content area"
+    },
+    {
+        "front": "inline nonreplaced elements - vertical alignment",
+        "back": "if you change the vertical alignment on the inline boxes, this also pushes up the top of the line box upward"
+    },
+    {
+        "front": "inline nonreplaced elements - scaling line height",
+        "back": "the best way to set line-height is to use a raw numnber as the value. this becomes the scaling factor and is inherited not computed example:line-height to be 1.5x their font-size: body{line-height: 1.5;}"
+    },
+    {
+        "front": "inline replaced elements",
+        "back": "inline replaced elements have an intrisic height and width that can cause the line box to become taler than normal. This doesn't change the line-height for any element in the line, including the replaced element itself. instead the line box grows to the entirety of the replaced element"
+    },
+    {
+        "front": "inline block elements",
+        "back": "inline-block - a hybrid of block-level and inline elements. An inline-block relates to other elements and content as an inline box."
+    },
+    {
+        "front": "run-in elements",
+        "back": "run-in element - block/inline hybrid that can make some block-level elements an inline part of a following element. Used in typography where a heading will appear as part of a paragraph of text"
+    }
+]

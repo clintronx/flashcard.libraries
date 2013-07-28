@@ -1,0 +1,78 @@
+[
+    {
+        "front": "floated elements",
+        "back": "a floated element is removed from the normal flow of the document although it still affects the layout."
+    },
+    {
+        "front": "margins and floated elements",
+        "back": "margins do not collapse around floated elements."
+    },
+    {
+        "front": "float",
+        "back": "img {float: left; margin:25px;}"
+    },
+    {
+        "front": "containing block - floated",
+        "back": "a floated elements containing block is the nearest block-level ancestor element. floated elements create a block box regardless of the type of element it is"
+    },
+    {
+        "front": "floating elements top",
+        "back": "a floating elements top may not be higher than the top of any earlier floating or block-level element. a floating elements top may not be higher that the top of the line box containing the floated element a floated element will exmpand to contain any floated descendents"
+    },
+    {
+        "front": "clear",
+        "back": "h3 {clear: left;}"
+    },
+    {
+        "front": "positioning",
+        "back": "positioning allows you to define exactly where the element boxes will appear  relative to where they would ordinarily be"
+    },
+    {
+        "front": "positioning types",
+        "back": "static - the elements box is generated as normal and remains in the document flow. default behaivor. relative - the elements box if offset by some distance, element remains in docuement flow. element maintains original shape and the original space in the document is preserved absolute - the elements box is completely removed from the flow of the document and positioned with respect to its containing block. The space the element would have contained is closed up. The positioned element creates a block-level box regardless of its type fixed - the elements box behaves as though it were set to absolute, but its conatining block is the viewport itself (viewport is the window itself)"
+    },
+    {
+        "front": "positioning containing block",
+        "back": "* the containing block of the 'root element' is user agent-specific * for a non-root element whose position value is relative or static the containing block is formed by the content edge of the nearest block-level or inline-block ancestor box * for non-root elements that have a position value of absolute the containing block is set to the nearest ancestor that has a position value other that static"
+    },
+    {
+        "front": "offset properties",
+        "back": "relative, absolute, and fixed use four distinct properties to describe the offset of a positioned elements sides with respect to its containing block. top for example describes bow far the top margin edge of the positioned element should be placed from the top of its containing block"
+    },
+    {
+        "front": "overflow",
+        "back": "control the behaivor of the content when it doesn't fix in the elements box. div#sidebar {position: absolute; top: 0; left: 0; width: 25%; height: 7em; background: #BBB; overflow: visible;}"
+    },
+    {
+        "front": "content clipping",
+        "back": "div#sidebar {position: absolute; top: 0; bottom: 50%; right: 50%; left: 0; width: 25%; clip: rect(1em,4em,6em,1em);}"
+    },
+    {
+        "front": "visibility",
+        "back": "em.trans {visibility: hidden; border: 3px solid gray; background: silver;} everything visible about the element is hidden, but the element is still part of the document. blank space is left"
+    },
+    {
+        "front": "absolute positioning",
+        "back": "when an element is positioned absolutely it is completely removed from the document flow. it is then positioned in respect to its conatining block and its edges are placed using offset properties. it is common for the author to pick a containing element for absolute elements with position: relative with no offsets example: p.contain {position: relative;}/*establish a containing block*/ b {position: absolute; top: auto; right: 0; bottom: 0; left: auto;}"
+    },
+    {
+        "front": "positioning example",
+        "back": "<div style=\"position: relative; width: 30em; height: 10em;\">  <div style=\"position: absolute; left: 0; width: 30%; top: 0;\">A</div>  <div style=\"position: absolute; left: 35%; width:30%; top: 0; height: 30%;\">B</div> </div>"
+    },
+    {
+        "front": "z-index",
+        "back": "as the z-index of positioned elements grows the element becomes closer to the reader. p#first {position: absolute; top: 0; left: 0; width: 20%; height: 20em; z-index: 10;} p#second {position: absolute; top: 0; left: 10%; width: 20%; height: 20em; z-index: 5;} p.first is on top of p.second"
+    },
+    {
+        "front": "fixed positioning",
+        "back": "fixed positioning is just like absolute positioning except the containing block of a fixed elements is the viewport. The element is completely removed from the document's flow and doesn't have a position relative to any part of the document"
+    },
+    {
+        "front": "fixed positioning example",
+        "back": "div#header {position: fixed; top: 0; bottom: 80%; left: 20%; right: 0;} div#sidebar {position: fixed; top: 0; bottom: 0; left: 0; right: 80%;} div#main {position: absolute; top: 20%; bottom: 0; left: 20%; right: 0; overflow: scroll;}  header and sidebar are frame style layout and are fixed in the viewport. main is absolutely positioned and offset so its not overlapped by frames overflow allows for all content to be viewable"
+    },
+    {
+        "front": "relative positioning",
+        "back": "relative element remains in document flow a relative positioned element is shifted by use of the offset properties. img {position: relative; top: -20px; left: -20px;} this offset the image top edge 20 pixels upward and offset the left edge 20 pixels however, there is a blank space in the document where the image would have been positioned"
+    }
+]

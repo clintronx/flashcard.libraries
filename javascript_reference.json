@@ -1,0 +1,66 @@
+[
+  {
+    "front": "create array",
+    "back": "var list = []; var anotherList = new Array();"
+  },
+  {
+    "front": "2d array",
+    "back": "var list = [['a','b'],['c','d']]; console.log(list[0][0]); //a"
+  },
+  {
+    "front": "array properties",
+    "back": "constructor - Specifies the function that creates an object's prototype. length - Reflects the number of elements in an array."
+  },
+  {
+    "front": "js array mutator methods",
+    "back": "pop - Removes the last element from an array and returns that element. push - Adds one or more elements to the end of an array and returns the new length of the array. reverse - Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first. shift - Removes the first element from an array and returns that element. sort - Sorts the elements of an array. splice - Adds and/or removes elements from an array. unshift - Adds one or more elements to the front of an array and returns the new length of the array."
+  },
+  {
+    "front": "js array accessor methods",
+    "back": "concat - Returns a new array comprised of this array joined with other array(s) and/or value(s). join - Joins all elements of an array into a string. slice - Extracts a section of an array and returns a new array. toSource Non-standard - Returns an array literal representing the specified array; you can use this value to create a new array. Overrides the Object.prototype.toSource method. toString - Returns a string representing the array and its elements. Overrides the Object.prototype.toString method. indexOf Requires JavaScript 1.6 - Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found. lastIndexOf Requires JavaScript 1.6 - Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found."
+  },
+  {
+    "front": "js array iteration methods",
+    "back": "forEach Requires JavaScript 1.6 - Calls a function for each element in the array. every Requires JavaScript 1.6 - Returns true if every element in this array satisfies the provided testing function. some Requires JavaScript 1.6 - Returns true if at least one element in this array satisfies the provided testing function. filter Requires JavaScript 1.6 - Creates a new array with all of the elements of this array for which the provided filtering function returns true. map Requires JavaScript 1.6 - Creates a new array with the results of calling a provided function on every element in this array. reduce Requires JavaScript 1.8 - Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value. reduceRight Requires JavaScript 1.8 - Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value."
+  },
+  {
+    "front": "Array generic methods",
+    "back": "to apply array methods to strings or other array-like objects (such as function arguments). By doing this, you treat a string as an array of characters (or otherwise treat a non-array as an array). function isLetter(character) {  return (character >= \"a\" && character <= \"z\"); } if (Array.prototype.every.call(str, isLetter)) alert(\"The string '\" + str + \"' contains only letters!\");"
+  },
+  {
+    "front": "using splice",
+    "back": "var myFish = [\"angel\", \"clown\", \"mandarin\", \"surgeon\"]; //removes 0 elements from index 2, and inserts \"drum\" var removed = myFish.splice(2, 0, \"drum\"); //myFish is [\"angel\", \"clown\", \"drum\", \"mandarin\", \"surgeon\"] //removed is [], no elements removed //removes 1 element from index 3 removed = myFish.splice(3, 1); //myFish is [\"angel\", \"clown\", \"drum\", \"surgeon\"] //removed is [\"mandarin\"] //removes 1 element from index 2, and inserts \"trumpet\" removed = myFish.splice(2, 1, \"trumpet\"); //myFish is [\"angel\", \"clown\", \"trumpet\", \"surgeon\"] //removed is [\"drum\"] //removes 2 elements from index 0, and inserts \"parrot\", \"anemone\" and \"blue\" removed = myFish.splice(0, 2, \"parrot\", \"anemone\", \"blue\"); //myFish is [\"parrot\", \"anemone\", \"blue\", \"trumpet\", \"surgeon\"] //removed is [\"angel\", \"clown\"]"
+  },
+  {
+    "front": "array concat",
+    "back": "The following code concatenates two arrays: var alpha = [\"a\", \"b\", \"c\"]; var numeric = [1, 2, 3]; // creates array [\"a\", \"b\", \"c\", 1, 2, 3]; alpha and numeric are unchanged var alphaNumeric = alpha.concat(numeric); Example: Concatenating three arrays The following code concatenates three arrays: var num1 = [1, 2, 3]; var num2 = [4, 5, 6]; var num3 = [7, 8, 9]; // creates array [1, 2, 3, 4, 5, 6, 7, 8, 9]; num1, num2, num3 are unchanged var nums = num1.concat(num2, num3);"
+  },
+  {
+    "front": "array unshift",
+    "back": "Adds one or more elements to the beginning of an array and returns the new length of the array.  var arr = [1, 2]; arr.unshift(0); //result of call is 3, the new array length //arr is [0, 1, 2] arr.unshift(-2, -1); // = 5 //arr is [-2, -1, 0, 1, 2] arr.unshift( [-3] ); //arr is [[-3], -2, -1, 0, 1, 2]"
+  },
+  {
+    "front": "array shift",
+    "back": "Removes the first element from an array and returns that element. This method changes the length of the array.  // assumes a println function is defined var myFish = [\"angel\", \"clown\", \"mandarin\", \"surgeon\"]; println(\"myFish before: \" + myFish); var shifted = myFish.shift(); println(\"myFish after: \" + myFish); println(\"Removed this element: \" + shifted); This example displays the following: myFish before: angel,clown,mandarin,surgeon myFish after: clown,mandarin,surgeon Removed this element: angel"
+  },
+  {
+    "front": "Function.prototype.call",
+    "back": "Calls a function with a given this value and arguments provided individually. With call, you can write a method once and then inherit it in another object, without having to rewrite the method for the new object."
+  },
+  {
+    "front": "Using call to chain constructors for an object",
+    "back": "You can use call to chain constructors for an object, similar to Java. In the following example, the constructor for the Product object is defined with two parameters, name and price. Two other functions Food and Toy invoke Product passing this and name and price. Product initializes the properties name and price, both specialized functions define the category.  function Product(name, price) { this.name = name; this.price = price; if (price < 0)  throw RangeError('Cannot create product \"' + name + '\" with a negative price');  return this; } function Food(name, price) {  Product.call(this, name, price);  this.category = 'food'; } Food.prototype = new Product(); function Toy(name, price) {  Product.call(this, name, price);  this.category = 'toy'; } Toy.prototype = new Product(); var cheese = new Food('feta', 5); var fun = new Toy('robot', 40);"
+  },
+  {
+    "front": "Function.prototype.apply",
+    "back": "Calls a function with a given this value and arguments provided as an array (or an array like object).  /* min/max number in an array */ var numbers = [5, 6, 2, 3, 7];  /* using Math.min/Math.max apply */ var max = Math.max.apply(null, numbers); /* This about equal to Math.max(numbers[0], ...) or Math.max(5, 6, ..) */ var min = Math.min.apply(null, numbers);"
+  },
+  {
+    "front": "keys",
+    "back": "Object.keys(obj) Returns an array of a given object's own enumerable properties, in the same order as that provided by a for-in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).  var arr = [\"a\", \"b\", \"c\"];alert(Object.keys(arr)); // will alert \"0,1,2\"  // array like object var obj = { 0 : \"a\", 1 : \"b\", 2 : \"c\"}; alert(Object.keys(obj)); // will alert \"0,1,2\""
+  },
+  {
+    "front": "key events",
+    "back": "keyup - The keyup event is fired when a key is released. keydown - The keydown event is fired when a key is pressed down. "
+  }
+]

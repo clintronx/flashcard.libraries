@@ -1,0 +1,22 @@
+[
+    {
+        "front": "named colors",
+        "back": "green gray black white red yellow blue etc..."
+    },
+    {
+        "front": "colors by rgb",
+        "back": "rgb(100%, 100%, 100%); rgb(255, 255, 255);  ranges: 0%-100%, 0-255"
+    },
+    {
+        "front": "hexadecimal rgb colors",
+        "back": "h1 { color: #FF0000; } /* red */ h2 { color: #F00; } /* red, computes to #FF0000 */"
+    },
+    {
+        "front": "absolute length units",
+        "back": "Inches (in) Centimeters (cm) Millimeters (mm) Points (pt) - 72pts to an inch, 12pts is 1/6in Picas (pc) - 1pc == 12pts, 6pc == 1in"
+    },
+    {
+        "front": "relative length units",
+        "back": "em-height (em) - 1em is defined to be the value  of the font-size of the given font if font-size is 14px then 1em == 14px ex-height (ex) - hieght of a lowercase x in the font being used pixels (px) - single dot on the computer screen"
+    }
+]

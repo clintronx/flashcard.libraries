@@ -1,0 +1,10 @@
+[
+    {
+        "front": "table display values",
+        "back": "table - defines a block-level table element inline-table - defines an inline table. generates an inline box table-row - elements in a row of cells table-row-group - groups one or more rows table-header-group - visually differnent, and is always displayed before all other rows and row groups table-footer-group - always displayed after all rows and row groups table-column - describes a column of cells table-column-group - groups one or more columns table-cell - single cell in a table table-caption - tables caption"
+    },
+    {
+        "front": "table markup",
+        "back": "<table>  <tr>   <td>Name:</td>   <td><input type=\"text\"></td>  </tr> </table>"
+    }
+]

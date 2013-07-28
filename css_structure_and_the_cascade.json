@@ -1,0 +1,38 @@
+[
+    {
+        "front": "calculate specificity",
+        "back": "a specificity value is expressed in four parts 0,0,0,0  * for every ID attr in the given selector  add 0,1,0,0 * for every class attr or pseudo-class in the selector  add 0,0,1,0 * for every element or pseudo-element in the selector  add 0,0,0,1 * combinators or universal selector do not contribute anything special"
+    },
+    {
+        "front": "specificity examples",
+        "back": "h1 {color: red;| /* specificity = 0,0,0,1 */ p em {color: purple;} /* specificity = 0,0,0,2 */ .grape{color: purple;} /* specificity = 0,0,1,0 */ *.bright {color: yellow;} /* specificity = 0,0,1,0 (/ p.bright em.dark {color: blue;} /* specificity = 0,0,2,2 */ #first-para {color: blue;} /* specificity = 0,1,0,0 */ * {color: gray;} /* specificity = 0,0,0,0 */"
+    },
+    {
+        "front": "Importance",
+        "back": "sometimes a declaration is so important that it outweights all other considerations  p.dark{color: black !important; background: while !important;}"
+    },
+    {
+        "front": "Inheritance",
+        "back": "mechanism by which styles are applied not only to the specified element but also to its descendents"
+    },
+    {
+        "front": "Cascade",
+        "back": "what happens when two rules of equal specificity apply to the same element?  * sort by weight and origin * sorting by specificity * sorting by order"
+    },
+    {
+        "front": "sorting by weight",
+        "back": "weight - if two rules apply to an element and one is marked !important the important rule wins out:  p{color: blue !important;} <p style='color: black;'>..</p> css style wins"
+    },
+    {
+        "front": "sorting by origin",
+        "back": "if an element is matched by normal-weight styles in both the author's style sheet and the reader's then the author's styles are used"
+    },
+    {
+        "front": "sorting by specificity",
+        "back": "if conflicting declarations apply to an element and they all have the same weight they should be sorted by specificity."
+    },
+    {
+        "front": "sorting by order",
+        "back": "finally if two rules have exactly the same weight, origin, and specificity then the one that occurs later in the style sheet wins out"
+    }
+]

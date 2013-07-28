@@ -1,0 +1,194 @@
+[
+  {
+    "front": "html5 doctype tag",
+    "back": "<!DOCTYPE html>"
+  },
+  {
+    "front": "character set",
+    "back": "<meta charset='utf-8' >"
+  },
+  {
+    "front": "Content Types",
+    "back": "Embedded Flow Heading Interactive Metadata Phrasing Sectioning"
+  },
+  {
+    "front": "Content Type: Embedded",
+    "back": "Content that imports other resources into the document, for example, audio, video, canvas, and iframe"
+  },
+  {
+    "front": "Content Type: Flow",
+    "back": "Elements used in the body of documents & applications, for example, form, h1, & small"
+  },
+  {
+    "front": "Content Type: Heading",
+    "back": "Section headers, for example, h1, h2, group"
+  },
+  {
+    "front": "Content Type: Interactive",
+    "back": "Content that users interact with, for example, audio, video controls, button, & textarea"
+  },
+  {
+    "front": "Content Type: Metadata",
+    "back": "Elements commonly found in the head section that setup the presentation of behavior of the rest of the document, for example, script, style, & title"
+  },
+  {
+    "front": "Content Type: Phrasing",
+    "back": "Test & text markup elements, for example,  mark, kbd, sub, and sup"
+  },
+  {
+    "front": "Content Type: Sectioning",
+    "back": "Elements that define sections in the document, for example, article, aside, & title"
+  },
+  {
+    "front": "Sectioning Elements",
+    "back": "header footer section article aside nav"
+  },
+  {
+    "front": "Sectioning Elements: Header",
+    "back": "Header content (for a page or a section of a page)  <header>  <h1>Header</h1. </header>"
+  },
+  {
+    "front": "Sectioning Elements: Footer",
+    "back": "Footer content (for a page or a section of a page)  <footer>  <h2>footer</h2> </footer>"
+  },
+  {
+    "front": "Sectioning Elements: Section",
+    "back": "a section of a web page  <section>  <article>....</article> </section>"
+  },
+  {
+    "front": "Sectioning Elements: Article",
+    "back": "Independent article content  <article>  <header>...</header>  <p>...</p>  <footer>...</footer> </article>"
+  },
+  {
+    "front": "Sectioning Elements: Aside",
+    "back": "Related content or pull quotes  <aside>  <p>...</p> </aside>"
+  },
+  {
+    "front": "Sectioning Elements: Nav",
+    "back": "Navigational aids  <nav>  <a href='http://localhost'>link1</a> </nav>"
+  },
+  {
+    "front": "stylesheet tag",
+    "back": "<link rel='stylesheet' href='css/html.css'>  <style type='text/css'>  h1{ font-size: 300%; } </style>"
+  },
+  {
+    "front": "javascript tag",
+    "back": "<script src='js/html5.js'></script>  <script type='text/javascript>  function example () { } </script>"
+  },
+  {
+    "front": "getElementById()",
+    "back": "returns the element with specified id attribute value  <div id='foo'> document.getElementById('foo');"
+  },
+  {
+    "front": "getElementsByName()",
+    "back": "returns ALL elements whose name attribute has the specified value  <input type='text' name='foo'> document.getElementsByName('foo');"
+  },
+  {
+    "front": "getElementsByTagName()",
+    "back": "return ALL elements whose tag name matches the specified value  <input type='text'> document.getElementsByTagName('input');"
+  },
+  {
+    "front": "querySelector()",
+    "back": "return the first element in the page which matches the specified selector rule(s)  document.querySelector('input.error'); returns the first input field with a style class of 'error'"
+  },
+  {
+    "front": "querySelectorAll()",
+    "back": "returns ALL elements which match the specified rule(s)  document.querySelectorAll('#results td'); returns any table cell inside the element with id='results'"
+  },
+  {
+    "front": "html5 example",
+    "back": "<!DOCTYPE html> <html>  <head>   <meta charset='utf-8'>   <title>Html5</title>   <link rel='stylesheet' href='css/html5.css'>  </head>  <body>   <nav>    <h3>NAV</h3>    <a href='http://www.example.com'>link1</a>   </nav>  </body> </html>"
+  },
+  {
+    "front": "geolocation: getCurrentPosition()",
+    "back": "navigator.geolocation.getCurrentPosition(  successCallback,  errorCallback, (optional)  options (optional));"
+  },
+  {
+    "front": "geolocation: watchPosition()",
+    "back": "updates callback when navigation changes  navigator.geolocation.watchPosition(  successCallback,  errorCallback, (optional)  options (optional));"
+  },
+  {
+    "front": "geolocation: clearWatch()",
+    "back": "cancels updates from user's location  navigator.geolocation.clearWatch(  watchId);"
+  },
+  {
+    "front": "video tag",
+    "back": "<video autobuffer='true' width='400px' height='300px' autoplay>  <source src='movie.mp4'>  No Html5 video support </video>"
+  },
+  {
+    "front": "audio tag",
+    "back": "<audio controls autoplay>  <source src='sound.mp3'>  No Sound Support </audio>"
+  },
+  {
+    "front": "communications api: send message",
+    "back": "window.postMessage(dataString, urlString);"
+  },
+  {
+    "front": "communications api: message handler",
+    "back": "function messageHandler(e) {  if(checkWhileList(e.origin)){   console.log(e.data);  } }; window.addEventListener('message', messageHandler, true);"
+  },
+  {
+    "front": "XMLHttpRequest Level 2",
+    "back": "var xhr = new XMLHttpRequest(); xhr.onload = function (e) {/*finished*/} xhr.open('POST', url, true); xhr.send(data);"
+  },
+  {
+    "front": "WebSocket Handshake",
+    "back": "to establish WebSocket connection the client and server upgrade from HTTP protocal to WebSocket protocal"
+  },
+  {
+    "front": "WebSocket",
+    "back": "var w = new WebSocket(url);"
+  },
+  {
+    "front": "WebSocket event listeners",
+    "back": "w.onopen = function () {  console.log('open'); w.send('data'); } w.onmessage = function (e) {  console.log('e.data'); } w.onclose = function () {  console.log('closed'); }"
+  },
+  {
+    "front": "Html5 form elements",
+    "back": "tel telephone number eamil email address text field url web location url search term to supply to search engine   for example, the search bar range numeric selector within a range of values   typically as a slider"
+  },
+  {
+    "front": "Html5 form elements api",
+    "back": "<label>Email: <input type='email' placholder='name@domain.com' autofocus required></label> <label>Text: <input type='text' autocomplete='on'></label> <label>Url: <input type='url' placholder='http://www.example.com'></label> <label>Search: <input type='search'></label> <label>Tel: <input type='tel' placholder='111-222-3333'></label> <label>Range: <input id='confidence' type='range' min='0' max='10' step='2'"
+  },
+  {
+    "front": "Html5 for datalist",
+    "back": "<datalist id='contactList'>  <option value='clinton.ayres@gmail.com' label='clintronx'>  <option value='captain.america@gmail.com' label='first avenger'"
+  },
+  {
+    "front": "Html5 form valueAsNumber()",
+    "back": "document.getElementById('confidence').valueAsNumber(65);"
+  },
+  {
+    "front": "Html5 from validation event listener",
+    "back": "<form id='register'>  <p><label id='name'>Name: </label><input type='text'></p>  <input type='submit' name='register' value='Register'> </form> document.register.addEventListener('invalid', invalidHandler, true);"
+  },
+  {
+    "front": "WebWorkers",
+    "back": "var worker = new WebWorker('script.js'); worker.postMessage('data to send'); worker.addEventListener('message', messageHandler, true); var messageHandler = function (e) {  console.log(e.data); }"
+  },
+  {
+    "front": "WebStorage types",
+    "back": "window.sessionStorage  - storage for life a single tab  - not shared between tabs  window.localStorage  - storage beyond single tab or window  - shared accross multiple views"
+  },
+  {
+    "front": "WebStorage sessionStorage api",
+    "back": "window.sessionStorage.setItem('key', 'value'); window.sessionStorage.key = 'value'; window.sessionStorage.getItem('key'); window.sessionStorage.key; window.sessionStorage.removeItem('key');"
+  },
+  {
+    "front": "WebStorage localStorage api",
+    "back": "window.localStorage.setItem('key', 'value'); window.localStorage.key = 'value'; window.localStorage.getItem('key'); window.localStorage.key; window.localStorage.removeItem('key');"
+  },
+  {
+    "front": "Html5 offline api",
+    "back": "add offline support by including a manifest  window.applicationCache  <!DOCTYPE html> <html manifest='application.manifest'> ... </html>  (applicaiton.manifest)  CACHE MANIFEST example.html example.js example.css example.png"
+  },
+  {
+    "front": "Html5 offline events",
+    "back": "if(navigator.online){console.log('online')} window.addEventListener('online', onlineHandler, true); window.addEventListener('offline', offlineHandler, true);"
+  },
+  {
+    "front": "Html5 offline manifest sections",
+    "back": "CACHE MANIFEST - instructs the browser to serve the file from the application cache, even if online FALLBACK - give alternate paths to resources that cannot be fetched NETWORK - denotes resources that are always fetched from the network"
+  }
+]

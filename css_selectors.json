@@ -1,0 +1,98 @@
+[
+    {
+        "front": "rule structure",
+        "back": "h1 { color: red; background: yellow;}  h1 - selector color: red - declaration color - property red - value { color: red; background: yellow;} - declaration block"
+    },
+    {
+        "front": "element selector",
+        "back": "h1 { color: red; } all h1 elements are red"
+    },
+    {
+        "front": "grouping selectors",
+        "back": "h2, p { color: red; } all h1 and p elements are red  equivalent to: h2 { color: red; } p { color: red; } "
+    },
+    {
+        "front": "universal selector",
+        "back": "* { color: red; } every element in the document is red"
+    },
+    {
+        "front": "group declarations",
+        "back": "h1 { color: red; } h1 { background: grey; }  equivalent to: h1 { color: red; background: grey };"
+    },
+    {
+        "front": "class selectors",
+        "back": ".warning { font-weight: bold }  all elements with class='warning' set the font to bold  other examples: p.warning { color: red; } all p elements with class='warning' are red"
+    },
+    {
+        "front": "multiple classes",
+        "back": "<p class='warning urgent'>...</p>  .warning { font-weight: bold; } .urgent { font-style: italic; } .warning.urgent { background: silver; }  chaning two classes together will only select elements with both classes defined in any order"
+    },
+    {
+        "front": "id selectors",
+        "back": "#first-el { font-weight: bold; }  applies to any element whose id attribute has a value of 'first-el'"
+    },
+    {
+        "front": "class and id's",
+        "back": "id's are unique within a document and cannot be combined since it doesn't make sence  classes can be assigne to any number of elements and can be grouped in selectors"
+    },
+    {
+        "front": "attribute selectors",
+        "back": "h1[class] { color: silver; }  selects all h1 elements that have a class attribute  a[href][title] {font-weight: bold; }  selects any a element with bot an href and a title attribute"
+    },
+    {
+        "front": "exact attribute selectors",
+        "back": "a[href='http://www.example.com'] { font-weight: bold; }  a[href='http://www.example.com'][title='example'] { font-size: 2005; }"
+    },
+    {
+        "front": "partial attribute selectors",
+        "back": "~= contains rhs ^= begins with rhs $= ends with rhs *=  contains substring rhs  p[class~='warning'] {font-weight: bold;}"
+    },
+    {
+        "front": "particular attribute selectors",
+        "back": "*[lang|='en'] { color: white; } selects any lang attribute that is equal to 'en' or begins with 'en-'"
+    },
+    {
+        "front": "descendent selectors (contextual selectors)",
+        "back": "h1 em { color: red; }  any em element that is a descendent of an h1 element"
+    },
+    {
+        "front": "selecting children",
+        "back": "h1 > strong { color: red; }  any strong element that is a child of an h1 element"
+    },
+    {
+        "front": "selecting adjacesnt siblings",
+        "back": "h1 + p { margin-top: 0; }  any p element the immediately follows an h1 element that shares a parent with the p element"
+    },
+    {
+        "front": "select any ul element that immediately follows a sibling table element that is descendent fron a body element that is itself a child of an html element",
+        "back": " html > body table + ul { color: red; }"
+    },
+    {
+        "front": "Pseudo-Classes and Pseudo-Elements",
+        "back": "these selectors let you assign styles to structures that don't necessarily exist in the document, or to phantom classes that are inferred by the stateof certain elements, or even by the state of the document itself"
+    },
+    {
+        "front": "link pseudo-classes",
+        "back": ":link refers to any anchor that is a hyperlink and points to an address that has not been visited  :visited refers to any anchor that is a hyperlink to an already visited address  a:link {color: blue;} a:visited {color: grey;} a.external:visited{color: red}"
+    },
+    {
+        "front": "dynamic pseudo-classes",
+        "back": "classes that can change a documents appearance as a result of user behavior  :focus refers to any element that currently has focus :hover refers to any element over which the mouse pointer is placed :active refers to any element that has been activated by user agent(mouse button down)"
+    },
+    {
+        "front": "dynamic pseudo-classes example",
+        "back": "a:link{color: navy;} a:visited{color: gray;} a:hover{color: red;} a:active{color: yellow;} input:focus{background: silver;} a:link:hover{color: red;}"
+    },
+    {
+        "front": "selecting a first child",
+        "back": "p:first-child{color: gray;}"
+    },
+    {
+        "front": "Pseudo-element selectors",
+        "back": ":first-letter :first-line :before :after"
+    },
+    {
+        "front": "style before and after elements",
+        "back": "h2:before { content: ']]'; color: silver; }  inserts generated content before all h2 elements  body:after { content: '   then end.'; }  inserts generated content after the body element"
+    }
+]
