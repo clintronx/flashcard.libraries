@@ -1,7 +1,7 @@
 [
   {
     "front": "replaced elemets",
-    "back": "<h1>replaced elemets are those where the element&#39;s content that is replaced by something that is not directly represented in the document content &nbsp;</h1><h1>img and input elements are replaced elements &nbsp;</h1><h1>example: &lt;img src=&#39;example.png/&gt;</h1>"
+    "back": "<p>replaced elemets are those where the element&#39;s content that is replaced by something that is not directly represented in the document content &nbsp;</p><p>img and input elements are replaced elements &nbsp;</p><p>example: &lt;img src=&#39;example.png/&gt;</p>"
   },
   {
     "front": "nonreplaced elements",

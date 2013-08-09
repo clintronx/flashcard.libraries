@@ -1,11 +1,11 @@
 [
     {
         "front": "rule structure",
-        "back": "<h1>h1 { color: red; background: yellow;} &nbsp;</h1><h1>h1&nbsp;<br /><span style=\"font-size:13px; line-height:1.2em\">- selector color: red</span><br /><span style=\"font-size:13px; line-height:1.2em\">- declaration color</span><br /><span style=\"font-size:13px; line-height:1.2em\">- property red</span><br /><span style=\"font-size:13px; line-height:1.2em\">- value { color: red; background: yellow;}</span><br /><span style=\"font-size:13px; line-height:1.2em\">- declaration block</span></h1>"
+        "back": "<p>h1 { color: red; background: yellow;} &nbsp;</p><p>h1&nbsp;<br /><span style=\"font-size:13px; line-height:1.2em\">- selector color: red</span><br /><span style=\"font-size:13px; line-height:1.2em\">- declaration color</span><br /><span style=\"font-size:13px; line-height:1.2em\">- property red</span><br /><span style=\"font-size:13px; line-height:1.2em\">- value { color: red; background: yellow;}</span><br /><span style=\"font-size:13px; line-height:1.2em\">- declaration block</span></p>"
     },
     {
         "front": "element selector",
-        "back": "<h1>h1 { color: red; }</h1><h1>- all h1 elements are red</h1>"
+        "back": "<p>h1 { color: red; }</p><p>- all h1 elements are red</p>"
     },
     {
         "front": "grouping selectors",
