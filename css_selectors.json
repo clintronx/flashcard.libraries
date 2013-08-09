@@ -1,98 +1,97 @@
 [
     {
         "front": "rule structure",
-        "back": "h1 { color: red; background: yellow;}  h1 - selector color: red - declaration color - property red - value { color: red; background: yellow;} - declaration block"
+        "back": "<h1>h1 { color: red; background: yellow;} &nbsp;</h1><h1>h1&nbsp;<br /><span style=\"font-size:13px; line-height:1.2em\">- selector color: red</span><br /><span style=\"font-size:13px; line-height:1.2em\">- declaration color</span><br /><span style=\"font-size:13px; line-height:1.2em\">- property red</span><br /><span style=\"font-size:13px; line-height:1.2em\">- value { color: red; background: yellow;}</span><br /><span style=\"font-size:13px; line-height:1.2em\">- declaration block</span></h1>"
     },
     {
         "front": "element selector",
-        "back": "h1 { color: red; } all h1 elements are red"
+        "back": "<h1>h1 { color: red; }</h1><h1>- all h1 elements are red</h1>"
     },
     {
         "front": "grouping selectors",
-        "back": "h2, p { color: red; } all h1 and p elements are red  equivalent to: h2 { color: red; } p { color: red; } "
+        "back": "<p>h2, p { color: red; }</p><p>- all h1 and p elements are red&nbsp;<br /><span style=\"line-height:1.6em\">- equivalent to: </span></p><p><span style=\"line-height:1.6em\">h2 { color: red; }<br />p { color: red; }</span></p>"
     },
     {
         "front": "universal selector",
-        "back": "* { color: red; } every element in the document is red"
+        "back": "<p>* { color: red; }</p><p>- every element in the document is red</p>"
     },
     {
         "front": "group declarations",
-        "back": "h1 { color: red; } h1 { background: grey; }  equivalent to: h1 { color: red; background: grey };"
+        "back": "<p>h1 { color: red; }</p><p>h1 { background: grey; } &nbsp;</p><p>-equivalent to:</p><p>h1 { color: red; background: grey };</p>"
     },
     {
         "front": "class selectors",
-        "back": ".warning { font-weight: bold }  all elements with class='warning' set the font to bold  other examples: p.warning { color: red; } all p elements with class='warning' are red"
+        "back": "<p>.warning { font-weight: bold } &nbsp;</p><p>- all elements with class=&#39;warning&#39; set the font to bold &nbsp;</p><p>other examples:</p><p>p.warning { color: red; }</p><p>- all p elements with class=&#39;warning&#39; are red</p>"
     },
     {
         "front": "multiple classes",
-        "back": "&ltp class='warning urgent'&gt...&lt/p&gt  .warning { font-weight: bold; } .urgent { font-style: italic; } .warning.urgent { background: silver; }  chaning two classes together will only select elements with both classes defined in any order"
+        "back": "<p>&lt;p class=&#39;warning urgent&#39;&gt;...&lt;/p&gt; .</p><p>warning { font-weight: bold; }<br />.urgent { font-style: italic; }<br />.warning.urgent { background: silver; }</p><p>- chaning two classes together will only select elements with both classes defined in any order</p>"
     },
     {
         "front": "id selectors",
-        "back": "#first-el { font-weight: bold; }  applies to any element whose id attribute has a value of 'first-el'"
+        "back": "<p>#first-el { font-weight: bold; }</p><p>- applies to any element whose id attribute has a value of &#39;first-el&#39;</p>"
     },
     {
         "front": "class and id's",
-        "back": "id's are unique within a document and cannot be combined since it doesn't make sence  classes can be assigne to any number of elements and can be grouped in selectors"
+        "back": "<p>id&#39;s are unique within a document and cannot be combined since it doesn&#39;t make sence &nbsp;</p><p>classes can be assigne to any number of elements and can be grouped in selectors</p>"
     },
     {
         "front": "attribute selectors",
-        "back": "h1[class] { color: silver; }  selects all h1 elements that have a class attribute  a[href][title] {font-weight: bold; }  selects any a element with bot an href and a title attribute"
+        "back": "<p>h1[class] { color: silver; }</p><p>- selects all h1 elements that have a class attribute</p><p>a[href][title] {font-weight: bold; }</p><p>- selects any a element with&nbsp;an href and a title attribute</p>"
     },
     {
         "front": "exact attribute selectors",
-        "back": "a[href='http://www.example.com'] { font-weight: bold; }  a[href='http://www.example.com'][title='example'] { font-size: 2005; }"
+        "back": "<p>a[href=&#39;http://www.example.com&#39;] { font-weight: bold; }</p><p>a[href=&#39;http://www.example.com&#39;][title=&#39;example&#39;] { font-size: 2005; }</p>"
     },
     {
-        "front": "partial attribute selectors",
-        "back": "~= contains rhs ^= begins with rhs $= ends with rhs *=  contains substring rhs  p[class~='warning'] {font-weight: bold;}"
+        "front": "partial attribute selectors",        "back": "<ul>    <li>~= contains rhs</li>    <li>^= begins with rhs</li>    <li>$= ends with rhs</li>    <li>*= contains substring rhs</li>    <li>p[class~=&#39;warning&#39;] {font-weight: bold;}</li></ul>"
     },
     {
         "front": "particular attribute selectors",
-        "back": "*[lang|='en'] { color: white; } selects any lang attribute that is equal to 'en' or begins with 'en-'"
+        "back": "<p>*[lang|=&#39;en&#39;] { color: white; }</p><p>- selects any lang attribute that is equal to &#39;en&#39; or begins with &#39;en-&#39;</p>"
     },
     {
         "front": "descendent selectors (contextual selectors)",
-        "back": "h1 em { color: red; }  any em element that is a descendent of an h1 element"
+        "back": "<p>h1 em { color: red; }</p><p>- any em element that is a descendent of an h1 element</p>"
     },
     {
         "front": "selecting children",
-        "back": "h1 &gt strong { color: red; }  any strong element that is a child of an h1 element"
+        "back": "<p>h1 &gt; strong { color: red; }</p><p>- any strong element that is a child of an h1 element</p>"
     },
     {
         "front": "selecting adjacesnt siblings",
-        "back": "h1 + p { margin-top: 0; }  any p element the immediately follows an h1 element that shares a parent with the p element"
+        "back": "<p>h1 + p { margin-top: 0; }</p><p>- any p element the immediately follows an h1 element that shares a parent with the p element</p>"
     },
     {
         "front": "select any ul element that immediately follows a sibling table element that is descendent fron a body element that is itself a child of an html element",
-        "back": " html &gt body table + ul { color: red; }"
+        "back": "<p>html &gt; body table + ul { color: red; }</p>"
     },
     {
         "front": "Pseudo-Classes and Pseudo-Elements",
-        "back": "these selectors let you assign styles to structures that don't necessarily exist in the document, or to phantom classes that are inferred by the stateof certain elements, or even by the state of the document itself"
+        "back": "<p>these selectors let you assign styles to structures that don&#39;t necessarily exist in the document,&nbsp;<span style=\"line-height:1.6em\">or to phantom classes that are inferred by the stateof certain elements, or even by the state of the document itself</span></p>"
     },
     {
         "front": "link pseudo-classes",
-        "back": ":link refers to any anchor that is a hyperlink and points to an address that has not been visited  :visited refers to any anchor that is a hyperlink to an already visited address  a:link {color: blue;} a:visited {color: grey;} a.external:visited{color: red}"
+        "back": "<p>:link refers to any anchor that is a hyperlink and points to an address that has not been visited</p><p>:visited refers to any anchor that is a hyperlink to an already visited address</p><p>a:link {color: blue;}</p><p>a:visited {color: grey;}</p><p>a.external:visited{color: red}</p>"
     },
     {
         "front": "dynamic pseudo-classes",
-        "back": "classes that can change a documents appearance as a result of user behavior  :focus refers to any element that currently has focus :hover refers to any element over which the mouse pointer is placed :active refers to any element that has been activated by user agent(mouse button down)"
+        "back": "<p>classes that can change a documents appearance as a result of user behavior:&nbsp;</p><p>:focus refers to any element that currently has focus</p><p>:hover refers to any element over which the mouse pointer is placed</p><p>:active refers to any element that has been activated by user agent(mouse button down)</p>"
     },
     {
         "front": "dynamic pseudo-classes example",
-        "back": "a:link{color: navy;} a:visited{color: gray;} a:hover{color: red;} a:active{color: yellow;} input:focus{background: silver;} a:link:hover{color: red;}"
+        "back": "<p>a:link{color: navy;}</p><p>a:visited{color: gray;}</p><p>a:hover{color: red;}</p><p>a:active{color: yellow;}</p><p>input:focus{background: silver;}</p><p>a:link:hover{color: red;}</p>"
     },
     {
         "front": "selecting a first child",
-        "back": "p:first-child{color: gray;}"
+        "back": "<p>p:first-child{color: gray;}</p>"
     },
     {
         "front": "Pseudo-element selectors",
-        "back": ":first-letter :first-line :before :after"
+        "back": "<p>:first-letter</p><p>:first-line</p><p>:before</p><p>:after</p>"
     },
     {
         "front": "style before and after elements",
-        "back": "h2:before { content: ']]'; color: silver; }  inserts generated content before all h2 elements  body:after { content: '   then end.'; }  inserts generated content after the body element"
+        "back": "<p>h2:before { content: &#39;]]&#39;; color: silver; }</p><p>- inserts generated content before all h2 elements</p><p>body:after { content: &#39; then end.&#39;; }</p><p>- inserts generated content after the body element</p>"
     }
 ]

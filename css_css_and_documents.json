@@ -1,30 +1,30 @@
 [
   {
     "front": "replaced elemets",
-    "back": "replaced elemets are those where the element's content that is replaced by something that is not directly represented in the document content  img and input elements are replaced elements  example: &ltimg src='example.png/&gt"
+    "back": "<h1>replaced elemets are those where the element&#39;s content that is replaced by something that is not directly represented in the document content &nbsp;</h1><h1>img and input elements are replaced elements &nbsp;</h1><h1>example: &lt;img src=&#39;example.png/&gt;</h1>"
   },
   {
     "front": "nonreplaced elements",
-    "back": "nonreplaced elements are the majority of HTML elements. There content is presented by the user agent inside a box genreated by the element itself  example: &ltspan&gtnonreplaced&lt/span&gt"
+    "back": "<p>nonreplaced elements are the majority of HTML elements.</p><p>Their&nbsp;content is presented by the user agent inside a box genreated by the element itself</p><p>example: &lt;span&gt;nonreplaced&lt;/span&gt;</p>"
   },
   {
     "front": "display roles",
-    "back": "block-level elements - generate an element box that fills its parent element's content area and cannot have other elements at its sides inline-level elements - generate an element box within a line of text and do not break up the fow of that line"
+    "back": "<p>block-level elements</p><ul>  <li>generate an element box that fills its parent element&#39;s content area and cannot have other elements at its sides inline-level elements</li>  <li>generate an element box within a line of text and do not break up the fow of that line</li></ul>"
   },
   {
     "front": "display specifications",
-    "back": "block-level cannot be contained in inline-level elements in HTML - violation. CSS can change add this behavior:  &ltp&gt&ltem&gtexample&lt/em&gt&lt/p&gt  p {display: inline;}  em {display: block}"
+    "back": "<p>block-level cannot be contained in inline-level elements in HTML&nbsp;<span style=\"line-height:1.6em\">- violation. </span></p><p><span style=\"line-height:1.6em\">CSS can change or add this behavior: </span></p><p><span style=\"line-height:1.6em\">&lt;p&gt;&lt;em&gt;example&lt;/em&gt;&lt;/p&gt; </span></p><p><span style=\"line-height:1.6em\">p {display: inline;} </span></p><p><span style=\"line-height:1.6em\">em {display: block}</span></p>"
   },
   {
     "front": "link tag",
-    "back": "&ltlink rel='stylesheet' type='text/css' href='css/html.css' media='all' /&gt  common media attributes: print projection screen all"
+    "back": "<p>&lt;link rel=&#39;stylesheet&#39; type=&#39;text/css&#39; href=&#39;css/html.css&#39; media=&#39;all&#39; /&gt;</p><p>common media attributes:</p><ul>  <li>print</li>  <li>projection</li>  <li>screen</li>  <li>all</li></ul>"
   },
   {
     "front": "@import directive",
-    "back": "note: must be placed before other css rules or it won't work at all  &ltstyle type='text/css'&gt @import url(style.css); h1 {color: grey} &lt/style&gt"
+    "back": "<p>note: must be placed before other css rules or it won&#39;t work at all</p><p>&lt;style type=&#39;text/css&#39;&gt;</p><p>@import url(style.css);</p><p>h1 {color: grey}</p><p>&lt;/style&gt;</p>"
   },
   {
     "front": "css comments",
-    "back": "/* comment here - mutli-line is ok too */  note: no other comments allowed"
+    "back": "<p>/* comment here - mutli-line is ok too */</p><p>note: no other comments allowed</p>"
   }
 ]

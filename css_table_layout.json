@@ -1,10 +1,10 @@
 [
     {
         "front": "table display values",
-        "back": "table - defines a block-level table element inline-table - defines an inline table. generates an inline box table-row - elements in a row of cells table-row-group - groups one or more rows table-header-group - visually differnent, and is always displayed before all other rows and row groups table-footer-group - always displayed after all rows and row groups table-column - describes a column of cells table-column-group - groups one or more columns table-cell - single cell in a table table-caption - tables caption"
+        "back": "<p><strong>table</strong> - defines a block-level table element</p><p><strong>inline-table</strong> - defines an inline table. generates an inline box</p><p><strong>table-row</strong> - elements in a row of cells</p><p><strong>table-row-group</strong> - groups one or more rows</p><p><strong>table-header-group</strong> - visually differnent, and is always displayed before all other rows and row groups</p><p><strong>table-footer-group</strong> - always displayed after all rows and row groups</p><p><strong>table-column</strong> - describes a column of cells</p><p><strong>table-column-group</strong> - groups one or more columns</p><p><strong>table-cell</strong> - single cell in a table table-caption - tables caption</p>"
     },
     {
         "front": "table markup",
-        "back": "&lttable&gt  &lttr&gt   &lttd&gtName:&lt/td&gt   &lttd&gt&ltinput type=\"text\"&gt&lt/td&gt  &lt/tr&gt &lt/table&gt"
+        "back": "<p>&lt;table&gt;&nbsp;</p><p><span style=\"line-height:1.6em\">&lt;tr&gt;&nbsp;</span></p><p><span style=\"line-height:1.6em\">&lt;td&gt;Name:&lt;/td&gt;&nbsp;</span><span style=\"line-height:1.6em\">&lt;td&gt;&lt;input type=\\&quot;text\\&quot;&gt;&lt;/td&gt;&nbsp;</span></p><p><span style=\"line-height:1.6em\">&lt;/tr&gt; </span></p><p><span style=\"line-height:1.6em\">&lt;/table&gt;</span></p>"
     }
 ]

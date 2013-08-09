@@ -17,18 +17,18 @@
     },
     {
         "front": "background positioning",
-        "back": "body {background-image: url(teddy.png); background-repeat: no-repeat; background-position: center;}  p {background-image: url(teddy.png); background-repeat: no-repeat; background-position: top right;} p {background-image: url(teddy.png); background-repeat: no-repeat; background-position: 50% 50%;}"
+        "back": "<p>body {background-image: url(teddy.png); background-repeat: no-repeat; background-position: center;}</p><p>p {background-image: url(teddy.png); background-repeat: no-repeat; background-position: top right;}</p><p>p {background-image: url(teddy.png); background-repeat: no-repeat; background-position: 50% 50%;}</p>"
     },
     {
         "front": "background positioning percentages",
-        "back": "p {background-image: url(teddy.png); background-repeat: no-repeat;} p.c1 { background-position: 0% 0%;} /* top left */ p.c2 { background-position: 50% 50%;} /* center center */ p.c3 { background-position: 100% 100%;} /* bottom left */ p.c4 { background-position: 0% 100%;} /* bottom left */ p.c5 { background-position: 100% 0%;} /* top right */"
+        "back": "<p>p {background-image: url(teddy.png); background-repeat: no-repeat;}</p><p>p.c1 { background-position: 0% 0%;} /* top left */</p><p>p.c2 { background-position: 50% 50%;} /* center center */</p><p>p.c3 { background-position: 100% 100%;} /* bottom left */</p><p>p.c4 { background-position: 0% 100%;} /* bottom left */</p><p>p.c5 { background-position: 100% 0%;} /* top right */</p>"
     },
     {
         "front": "background attachment",
-        "back": "body {background-image: url(http://www.example.com/teddy.png); background-repeat: repeat-y; background-attachment: fixed;}  fixes the image in repect to the viewing area and immune to scrolling if background-attachment:scroll them image travels with view"
+        "back": "<p>body {background-image: url(http://www.example.com/teddy.png); background-repeat: repeat-y; background-attachment: fixed;}</p><p>fixes the image in repect to the viewing area and immune to scrolling if background-attachment:scroll them image travels with view</p>"
     },
     {
         "front": "background",
-        "back": "body {background: white url(teddy.png) top left repeat-y fixed;} /* background-color background-image background-position background-repeat background-attachment */"
+        "back": "<p>body {background: white url(teddy.png) top left repeat-y fixed;}&nbsp;</p><p><span style=\"line-height:1.6em\">- background-color background-image background-position background-repeat background-attachment</span></p>"
     }
 ]
